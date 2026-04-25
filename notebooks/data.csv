@@ -1,0 +1,1001 @@
+transaction_id,store_id,fecha,mes,dia_semana,hora,ubicacion_tienda,tipo_zona,producto,categoria_producto,precio_unitario,tipo_promocion,clima
+T00001,S044,2024-04-12,4,Friday,20,Arequipa,Residencial,Jabón,Aseo,4.16,Ninguno,Lluvioso
+T00002,S047,2024-10-20,10,Sunday,7,Cusco,Residencial,Energizante,Bebidas,4.59,2x1,Soleado
+T00003,S002,2024-02-20,2,Tuesday,17,Cusco,Residencial,Sandwich,Comidas,14.42,2x1,Soleado
+T00004,S029,2024-12-05,12,Thursday,20,Cusco,Mixta,Cerveza,Alcohol,11.92,Descuento,Lluvioso
+T00005,S024,2024-07-09,7,Tuesday,17,Piura,Comercial,Alcohol medicinal,Farmacia,4.9,2x1,Lluvioso
+T00006,S033,2024-08-04,8,Sunday,18,Lima,Residencial,Jabón,Aseo,9.65,Ninguno,Soleado
+T00007,S035,2024-09-17,9,Tuesday,15,Piura,Residencial,Cerveza,Alcohol,18.65,Descuento,Nublado
+T00008,S032,2024-08-14,8,Wednesday,10,Huancayo,Mixta,Agua,Bebidas,3.54,2x1,Lluvioso
+T00009,S002,2024-08-18,8,Sunday,22,Cusco,Residencial,Vino,Alcohol,7.46,Ninguno,Lluvioso
+T00010,S027,2024-06-18,6,Tuesday,18,Huancayo,Residencial,Shampoo,Aseo,11.25,Ninguno,Nublado
+T00011,S041,2024-04-30,4,Tuesday,18,Lima,Mixta,Alcohol medicinal,Farmacia,6.63,2x1,Nublado
+T00012,S037,2024-06-28,6,Friday,22,Huancayo,Residencial,Galletas,Snacks,2.42,2x1,Lluvioso
+T00013,S024,2024-08-11,8,Sunday,6,Lima,Mixta,Alcohol medicinal,Farmacia,8.1,2x1,Nublado
+T00014,S026,2024-11-20,11,Wednesday,7,Huancayo,Comercial,Empanada,Comidas,11.96,Ninguno,Soleado
+T00015,S007,2024-05-26,5,Sunday,12,Cusco,Residencial,Energizante,Bebidas,7.03,Ninguno,Nublado
+T00016,S048,2024-09-08,9,Sunday,21,Piura,Residencial,Vino,Alcohol,18.03,Ninguno,Soleado
+T00017,S029,2024-07-26,7,Friday,8,Cusco,Comercial,Energizante,Bebidas,2.97,Descuento,Soleado
+T00018,S048,2024-12-31,12,Tuesday,7,Huancayo,Mixta,Jabón,Aseo,9.77,Ninguno,Soleado
+T00019,S048,2024-01-22,1,Monday,19,Huancayo,Comercial,Paracetamol,Farmacia,4.61,Ninguno,Lluvioso
+T00020,S031,2024-05-26,5,Sunday,9,Arequipa,Residencial,Energizante,Bebidas,3.68,Combo,Soleado
+T00021,S024,2024-04-08,4,Monday,6,Cusco,Mixta,Jabón,Aseo,9.57,Ninguno,Soleado
+T00022,S026,2024-04-23,4,Tuesday,20,Huancayo,Mixta,Chocolate,Snacks,5.24,2x1,Nublado
+T00023,S032,2024-12-20,12,Friday,18,Cusco,Comercial,Energizante,Bebidas,2.43,Descuento,Soleado
+T00024,S030,2024-08-02,8,Friday,22,Cusco,Comercial,Paracetamol,Farmacia,3.36,Ninguno,Soleado
+T00025,S009,2024-02-16,2,Friday,8,Cusco,Residencial,Galletas,Snacks,3.17,Ninguno,Soleado
+T00026,S012,2024-05-08,5,Wednesday,6,Piura,Comercial,Alcohol medicinal,Farmacia,5.94,Ninguno,Soleado
+T00027,S021,2024-06-02,6,Sunday,21,Arequipa,Residencial,Paracetamol,Farmacia,8.34,Ninguno,Soleado
+T00028,S005,2024-02-08,2,Thursday,9,Lima,Comercial,Paracetamol,Farmacia,6.51,Ninguno,Nublado
+T00029,S040,2024-01-04,1,Thursday,21,Piura,Residencial,Vino,Alcohol,21.59,2x1,Nublado
+T00030,S034,2024-11-25,11,Monday,16,Cusco,Residencial,Shampoo,Aseo,7.08,Ninguno,Nublado
+T00031,S035,2024-04-24,4,Wednesday,14,Cusco,Comercial,Shampoo,Aseo,7.39,2x1,Soleado
+T00032,S017,2024-06-25,6,Tuesday,8,Cusco,Comercial,Jugo,Bebidas,7.58,2x1,Lluvioso
+T00033,S047,2024-03-02,3,Saturday,21,Lima,Comercial,Jabón,Aseo,11.6,Ninguno,Soleado
+T00034,S005,2024-05-23,5,Thursday,10,Arequipa,Residencial,Cerveza,Alcohol,15.39,Ninguno,Soleado
+T00035,S005,2024-06-11,6,Tuesday,16,Arequipa,Comercial,Cerveza,Alcohol,7.38,Descuento,Soleado
+T00036,S039,2024-01-29,1,Monday,10,Huancayo,Mixta,Jabón,Aseo,4.67,Descuento,Soleado
+T00037,S013,2024-03-31,3,Sunday,15,Piura,Mixta,Paracetamol,Farmacia,8.22,Ninguno,Nublado
+T00038,S035,2024-12-13,12,Friday,22,Lima,Residencial,Paracetamol,Farmacia,3.52,Combo,Soleado
+T00039,S038,2024-05-26,5,Sunday,20,Lima,Residencial,Paracetamol,Farmacia,3.41,Ninguno,Soleado
+T00040,S028,2024-06-04,6,Tuesday,13,Piura,Comercial,Galletas,Snacks,5.93,Ninguno,Soleado
+T00041,S033,2024-08-27,8,Tuesday,18,Huancayo,Mixta,Shampoo,Aseo,4.36,Combo,Soleado
+T00042,S006,2024-03-05,3,Tuesday,20,Lima,Mixta,Shampoo,Aseo,5.07,Ninguno,Nublado
+T00043,S004,2024-07-15,7,Monday,10,Huancayo,Mixta,Jabón,Aseo,6.01,Descuento,Soleado
+T00044,S017,2024-10-14,10,Monday,7,Cusco,Mixta,Galletas,Snacks,2.54,2x1,Nublado
+T00045,S034,2024-04-21,4,Sunday,20,Trujillo,Residencial,Alcohol medicinal,Farmacia,6.06,Descuento,Lluvioso
+T00046,S005,2024-11-03,11,Sunday,11,Lima,Mixta,Vino,Alcohol,22.0,2x1,Lluvioso
+T00047,S040,2024-02-03,2,Saturday,11,Trujillo,Comercial,Shampoo,Aseo,5.11,2x1,Lluvioso
+T00048,S005,2024-07-02,7,Tuesday,8,Arequipa,Mixta,Shampoo,Aseo,4.25,Ninguno,Nublado
+T00049,S048,2024-08-20,8,Tuesday,17,Piura,Comercial,Papas fritas,Snacks,1.46,2x1,Soleado
+T00050,S026,2024-03-01,3,Friday,22,Piura,Residencial,Jugo,Bebidas,5.22,Ninguno,Lluvioso
+T00051,S039,2024-01-14,1,Sunday,12,Arequipa,Mixta,Paracetamol,Farmacia,4.28,2x1,Soleado
+T00052,S034,2024-09-29,9,Sunday,12,Huancayo,Comercial,Alcohol medicinal,Farmacia,6.76,Ninguno,Soleado
+T00053,S021,2024-04-20,4,Saturday,13,Lima,Mixta,Papas fritas,Snacks,2.22,Ninguno,Nublado
+T00054,S006,2024-07-16,7,Tuesday,11,Cusco,Comercial,Hamburguesa,Comidas,5.52,Ninguno,Lluvioso
+T00055,S006,2024-11-17,11,Sunday,16,Cusco,Mixta,Alcohol medicinal,Farmacia,8.39,Ninguno,Nublado
+T00056,S033,2024-04-27,4,Saturday,9,Arequipa,Residencial,Cerveza,Alcohol,8.93,2x1,Soleado
+T00057,S035,2024-06-26,6,Wednesday,15,Trujillo,Mixta,Galletas,Snacks,1.69,Ninguno,Nublado
+T00058,S029,2024-04-03,4,Wednesday,22,Trujillo,Comercial,Vino,Alcohol,7.26,Ninguno,Soleado
+T00059,S018,2024-11-23,11,Saturday,16,Lima,Residencial,Alcohol medicinal,Farmacia,7.12,Ninguno,Soleado
+T00060,S039,2024-10-22,10,Tuesday,13,Huancayo,Mixta,Shampoo,Aseo,8.35,2x1,Lluvioso
+T00061,S037,2024-07-16,7,Tuesday,11,Arequipa,Mixta,Hamburguesa,Comidas,12.41,Ninguno,Lluvioso
+T00062,S008,2024-10-15,10,Tuesday,9,Huancayo,Comercial,Papas fritas,Snacks,3.68,Descuento,Soleado
+T00063,S006,2024-09-17,9,Tuesday,20,Cusco,Residencial,Chocolate,Snacks,4.58,2x1,Lluvioso
+T00064,S005,2024-07-18,7,Thursday,20,Piura,Comercial,Hamburguesa,Comidas,12.26,2x1,Nublado
+T00065,S026,2024-10-19,10,Saturday,13,Piura,Residencial,Cerveza,Alcohol,23.3,2x1,Nublado
+T00066,S026,2024-04-19,4,Friday,9,Huancayo,Mixta,Agua,Bebidas,3.36,Descuento,Lluvioso
+T00067,S024,2024-10-17,10,Thursday,16,Huancayo,Comercial,Chocolate,Snacks,1.16,Descuento,Soleado
+T00068,S040,2024-06-09,6,Sunday,22,Trujillo,Mixta,Hamburguesa,Comidas,14.61,Ninguno,Nublado
+T00069,S001,2024-02-18,2,Sunday,12,Lima,Residencial,Paracetamol,Farmacia,7.11,Ninguno,Lluvioso
+T00070,S010,2024-03-18,3,Monday,20,Piura,Comercial,Alcohol medicinal,Farmacia,5.61,Ninguno,Nublado
+T00071,S047,2024-12-31,12,Tuesday,7,Cusco,Residencial,Vino,Alcohol,9.73,Descuento,Soleado
+T00072,S021,2024-08-16,8,Friday,8,Arequipa,Residencial,Cerveza,Alcohol,21.77,Descuento,Lluvioso
+T00073,S020,2024-08-10,8,Saturday,21,Piura,Mixta,Chocolate,Snacks,1.91,Descuento,Soleado
+T00074,S017,2024-01-11,1,Thursday,15,Piura,Mixta,Vino,Alcohol,10.17,2x1,Nublado
+T00075,S045,2024-07-20,7,Saturday,19,Lima,Comercial,Sandwich,Comidas,6.39,Ninguno,Nublado
+T00076,S021,2024-04-07,4,Sunday,10,Arequipa,Comercial,Papas fritas,Snacks,3.77,Descuento,Soleado
+T00077,S043,2024-01-27,1,Saturday,11,Arequipa,Comercial,Cerveza,Alcohol,20.65,2x1,Lluvioso
+T00078,S022,2024-07-11,7,Thursday,9,Arequipa,Comercial,Jabón,Aseo,7.81,Descuento,Lluvioso
+T00079,S040,2024-03-09,3,Saturday,6,Piura,Mixta,Cerveza,Alcohol,17.84,2x1,Lluvioso
+T00080,S044,2024-01-17,1,Wednesday,6,Lima,Residencial,Hamburguesa,Comidas,11.95,Ninguno,Lluvioso
+T00081,S025,2024-10-31,10,Thursday,22,Piura,Residencial,Jugo,Bebidas,6.39,Ninguno,Lluvioso
+T00082,S007,2024-09-24,9,Tuesday,20,Arequipa,Comercial,Agua,Bebidas,5.53,2x1,Nublado
+T00083,S045,2024-05-16,5,Thursday,21,Piura,Mixta,Shampoo,Aseo,6.92,Descuento,Lluvioso
+T00084,S042,2024-04-07,4,Sunday,8,Trujillo,Mixta,Chocolate,Snacks,3.7,Ninguno,Lluvioso
+T00085,S029,2024-04-17,4,Wednesday,7,Arequipa,Comercial,Galletas,Snacks,5.7,Ninguno,Soleado
+T00086,S004,2024-11-13,11,Wednesday,17,Lima,Mixta,Gaseosa,Bebidas,4.53,Ninguno,Lluvioso
+T00087,S006,2024-05-25,5,Saturday,10,Lima,Residencial,Shampoo,Aseo,10.29,Ninguno,Lluvioso
+T00088,S026,2024-10-21,10,Monday,19,Arequipa,Comercial,Shampoo,Aseo,4.96,Ninguno,Lluvioso
+T00089,S017,2024-08-28,8,Wednesday,8,Huancayo,Residencial,Shampoo,Aseo,8.12,Combo,Soleado
+T00090,S009,2024-08-03,8,Saturday,8,Arequipa,Comercial,Shampoo,Aseo,6.12,Descuento,Soleado
+T00091,S018,2024-07-13,7,Saturday,7,Cusco,Comercial,Jugo,Bebidas,6.41,2x1,Soleado
+T00092,S045,2024-02-06,2,Tuesday,21,Trujillo,Residencial,Jabón,Aseo,9.42,Ninguno,Soleado
+T00093,S043,2024-10-15,10,Tuesday,11,Arequipa,Residencial,Empanada,Comidas,11.8,Ninguno,Soleado
+T00094,S049,2024-02-14,2,Wednesday,15,Piura,Mixta,Shampoo,Aseo,6.3,Combo,Nublado
+T00095,S004,2024-08-20,8,Tuesday,22,Piura,Residencial,Hamburguesa,Comidas,8.42,Ninguno,Lluvioso
+T00096,S012,2024-12-17,12,Tuesday,9,Piura,Mixta,Energizante,Bebidas,4.84,Ninguno,Nublado
+T00097,S029,2024-06-12,6,Wednesday,8,Cusco,Residencial,Cerveza,Alcohol,18.98,Ninguno,Soleado
+T00098,S017,2024-01-04,1,Thursday,22,Arequipa,Residencial,Jugo,Bebidas,6.16,2x1,Soleado
+T00099,S025,2024-08-23,8,Friday,20,Trujillo,Mixta,Vino,Alcohol,10.37,Descuento,Soleado
+T00100,S029,2024-10-06,10,Sunday,17,Piura,Mixta,Vino,Alcohol,14.62,2x1,Nublado
+T00101,S002,2024-06-29,6,Saturday,8,Cusco,Comercial,Gaseosa,Bebidas,5.64,Ninguno,Soleado
+T00102,S038,2024-12-09,12,Monday,13,Arequipa,Residencial,Energizante,Bebidas,4.35,Ninguno,Nublado
+T00103,S033,2024-09-23,9,Monday,14,Lima,Residencial,Alcohol medicinal,Farmacia,6.62,Ninguno,Nublado
+T00104,S049,2024-08-20,8,Tuesday,18,Huancayo,Residencial,Shampoo,Aseo,5.6,Ninguno,Lluvioso
+T00105,S047,2024-12-25,12,Wednesday,16,Trujillo,Mixta,Hamburguesa,Comidas,12.09,2x1,Soleado
+T00106,S025,2024-09-07,9,Saturday,12,Arequipa,Comercial,Galletas,Snacks,1.82,Ninguno,Lluvioso
+T00107,S028,2024-10-27,10,Sunday,19,Cusco,Residencial,Jabón,Aseo,8.34,Ninguno,Lluvioso
+T00108,S044,2024-07-20,7,Saturday,8,Trujillo,Residencial,Paracetamol,Farmacia,5.42,Ninguno,Lluvioso
+T00109,S003,2024-01-20,1,Saturday,22,Arequipa,Residencial,Vino,Alcohol,24.85,Descuento,Nublado
+T00110,S047,2024-08-24,8,Saturday,13,Trujillo,Mixta,Jugo,Bebidas,3.08,Descuento,Nublado
+T00111,S023,2024-01-14,1,Sunday,12,Lima,Comercial,Paracetamol,Farmacia,5.78,Ninguno,Soleado
+T00112,S020,2024-10-29,10,Tuesday,16,Piura,Mixta,Alcohol medicinal,Farmacia,7.95,Ninguno,Soleado
+T00113,S014,2024-10-10,10,Thursday,16,Trujillo,Mixta,Shampoo,Aseo,8.32,Ninguno,Soleado
+T00114,S024,2024-05-09,5,Thursday,14,Trujillo,Comercial,Jabón,Aseo,9.51,Ninguno,Nublado
+T00115,S045,2024-09-07,9,Saturday,16,Huancayo,Comercial,Gaseosa,Bebidas,4.73,Combo,Lluvioso
+T00116,S026,2024-11-03,11,Sunday,21,Piura,Comercial,Cerveza,Alcohol,22.49,Ninguno,Soleado
+T00117,S026,2024-04-23,4,Tuesday,22,Piura,Mixta,Energizante,Bebidas,6.14,Ninguno,Soleado
+T00118,S038,2024-08-07,8,Wednesday,7,Piura,Comercial,Agua,Bebidas,6.69,Ninguno,Soleado
+T00119,S007,2024-01-19,1,Friday,11,Piura,Comercial,Jabón,Aseo,6.6,Ninguno,Soleado
+T00120,S002,2024-05-22,5,Wednesday,6,Lima,Residencial,Hamburguesa,Comidas,12.59,Ninguno,Lluvioso
+T00121,S043,2024-04-26,4,Friday,17,Trujillo,Comercial,Jabón,Aseo,8.17,2x1,Lluvioso
+T00122,S046,2024-12-01,12,Sunday,20,Trujillo,Mixta,Energizante,Bebidas,3.18,Combo,Lluvioso
+T00123,S031,2024-01-27,1,Saturday,20,Cusco,Mixta,Galletas,Snacks,5.12,Descuento,Soleado
+T00124,S028,2024-03-11,3,Monday,22,Piura,Residencial,Galletas,Snacks,3.63,Descuento,Soleado
+T00125,S018,2024-01-26,1,Friday,14,Piura,Comercial,Agua,Bebidas,3.42,Combo,Soleado
+T00126,S007,2024-06-12,6,Wednesday,15,Lima,Mixta,Papas fritas,Snacks,3.36,Ninguno,Lluvioso
+T00127,S041,2024-06-08,6,Saturday,16,Piura,Residencial,Paracetamol,Farmacia,6.12,2x1,Nublado
+T00128,S006,2024-08-28,8,Wednesday,16,Cusco,Comercial,Hamburguesa,Comidas,11.45,Ninguno,Lluvioso
+T00129,S002,2024-07-14,7,Sunday,18,Lima,Comercial,Cerveza,Alcohol,10.39,Ninguno,Soleado
+T00130,S016,2024-08-02,8,Friday,17,Piura,Comercial,Jugo,Bebidas,4.0,Descuento,Nublado
+T00131,S030,2024-04-15,4,Monday,21,Cusco,Residencial,Vino,Alcohol,24.86,Descuento,Nublado
+T00132,S002,2024-05-28,5,Tuesday,11,Huancayo,Comercial,Agua,Bebidas,2.96,Descuento,Nublado
+T00133,S047,2024-09-05,9,Thursday,14,Lima,Mixta,Hamburguesa,Comidas,9.97,Ninguno,Nublado
+T00134,S002,2024-02-18,2,Sunday,15,Huancayo,Comercial,Jabón,Aseo,4.65,2x1,Nublado
+T00135,S046,2024-12-12,12,Thursday,7,Arequipa,Comercial,Alcohol medicinal,Farmacia,7.24,2x1,Nublado
+T00136,S018,2024-01-25,1,Thursday,18,Trujillo,Comercial,Shampoo,Aseo,6.49,2x1,Lluvioso
+T00137,S031,2024-11-11,11,Monday,11,Trujillo,Mixta,Alcohol medicinal,Farmacia,8.28,2x1,Lluvioso
+T00138,S040,2024-02-25,2,Sunday,20,Lima,Mixta,Sandwich,Comidas,6.78,Ninguno,Soleado
+T00139,S022,2024-09-29,9,Sunday,10,Cusco,Residencial,Vino,Alcohol,18.43,2x1,Lluvioso
+T00140,S005,2024-01-14,1,Sunday,12,Trujillo,Residencial,Paracetamol,Farmacia,4.33,Ninguno,Nublado
+T00141,S026,2024-03-05,3,Tuesday,18,Trujillo,Comercial,Papas fritas,Snacks,1.21,Combo,Nublado
+T00142,S001,2024-07-14,7,Sunday,7,Cusco,Comercial,Sandwich,Comidas,13.92,2x1,Soleado
+T00143,S023,2024-05-09,5,Thursday,21,Trujillo,Residencial,Galletas,Snacks,3.48,Ninguno,Soleado
+T00144,S020,2024-12-09,12,Monday,18,Arequipa,Residencial,Cerveza,Alcohol,21.24,Ninguno,Soleado
+T00145,S008,2024-10-03,10,Thursday,13,Piura,Mixta,Alcohol medicinal,Farmacia,8.81,Ninguno,Lluvioso
+T00146,S025,2024-11-15,11,Friday,15,Huancayo,Mixta,Cerveza,Alcohol,10.85,Ninguno,Soleado
+T00147,S009,2024-04-28,4,Sunday,15,Trujillo,Mixta,Galletas,Snacks,4.08,Ninguno,Lluvioso
+T00148,S032,2024-06-01,6,Saturday,13,Arequipa,Comercial,Vino,Alcohol,15.42,2x1,Nublado
+T00149,S022,2024-08-09,8,Friday,12,Lima,Residencial,Papas fritas,Snacks,4.74,Descuento,Soleado
+T00150,S033,2024-08-22,8,Thursday,18,Piura,Comercial,Jabón,Aseo,7.31,Descuento,Lluvioso
+T00151,S003,2024-07-02,7,Tuesday,8,Huancayo,Mixta,Shampoo,Aseo,10.49,Descuento,Lluvioso
+T00152,S026,2024-04-13,4,Saturday,8,Piura,Comercial,Sandwich,Comidas,8.55,2x1,Nublado
+T00153,S047,2024-11-09,11,Saturday,17,Lima,Comercial,Paracetamol,Farmacia,3.87,Combo,Soleado
+T00154,S007,2024-05-11,5,Saturday,15,Huancayo,Mixta,Papas fritas,Snacks,1.02,2x1,Nublado
+T00155,S019,2024-01-04,1,Thursday,19,Arequipa,Residencial,Chocolate,Snacks,4.0,Descuento,Nublado
+T00156,S028,2024-05-31,5,Friday,18,Cusco,Comercial,Galletas,Snacks,1.74,Ninguno,Lluvioso
+T00157,S039,2024-09-07,9,Saturday,20,Arequipa,Residencial,Vino,Alcohol,19.03,2x1,Soleado
+T00158,S019,2024-05-16,5,Thursday,21,Trujillo,Residencial,Cerveza,Alcohol,11.19,Combo,Lluvioso
+T00159,S035,2024-02-04,2,Sunday,19,Piura,Mixta,Jabón,Aseo,4.4,Ninguno,Soleado
+T00160,S028,2024-05-08,5,Wednesday,9,Huancayo,Residencial,Alcohol medicinal,Farmacia,4.98,2x1,Soleado
+T00161,S033,2024-06-11,6,Tuesday,19,Piura,Comercial,Papas fritas,Snacks,1.17,Descuento,Soleado
+T00162,S005,2024-01-07,1,Sunday,11,Piura,Mixta,Vino,Alcohol,17.86,2x1,Lluvioso
+T00163,S033,2024-05-10,5,Friday,10,Lima,Mixta,Sandwich,Comidas,12.2,Combo,Soleado
+T00164,S048,2024-03-21,3,Thursday,7,Cusco,Comercial,Sandwich,Comidas,9.58,Descuento,Soleado
+T00165,S007,2024-02-26,2,Monday,7,Piura,Comercial,Sandwich,Comidas,9.59,Descuento,Lluvioso
+T00166,S003,2024-10-03,10,Thursday,9,Huancayo,Comercial,Jabón,Aseo,4.22,Descuento,Nublado
+T00167,S028,2024-02-13,2,Tuesday,6,Piura,Mixta,Paracetamol,Farmacia,3.66,2x1,Soleado
+T00168,S003,2024-10-23,10,Wednesday,9,Trujillo,Residencial,Jugo,Bebidas,5.2,Ninguno,Nublado
+T00169,S009,2024-10-09,10,Wednesday,16,Huancayo,Residencial,Cerveza,Alcohol,21.17,Ninguno,Soleado
+T00170,S027,2024-01-12,1,Friday,16,Huancayo,Mixta,Jugo,Bebidas,6.01,Ninguno,Soleado
+T00171,S044,2024-11-20,11,Wednesday,8,Lima,Residencial,Vino,Alcohol,21.56,Ninguno,Nublado
+T00172,S041,2024-12-29,12,Sunday,17,Lima,Residencial,Galletas,Snacks,4.56,Descuento,Nublado
+T00173,S034,2024-11-02,11,Saturday,20,Piura,Comercial,Sandwich,Comidas,13.44,Ninguno,Nublado
+T00174,S021,2024-03-06,3,Wednesday,8,Cusco,Mixta,Paracetamol,Farmacia,5.14,2x1,Soleado
+T00175,S027,2024-08-14,8,Wednesday,19,Cusco,Comercial,Vino,Alcohol,23.24,Ninguno,Soleado
+T00176,S038,2024-12-19,12,Thursday,19,Huancayo,Comercial,Cerveza,Alcohol,6.34,2x1,Lluvioso
+T00177,S019,2024-08-02,8,Friday,21,Lima,Mixta,Paracetamol,Farmacia,8.81,Descuento,Lluvioso
+T00178,S030,2024-04-29,4,Monday,11,Trujillo,Residencial,Vino,Alcohol,17.37,Ninguno,Soleado
+T00179,S011,2024-02-10,2,Saturday,9,Arequipa,Comercial,Agua,Bebidas,7.93,2x1,Soleado
+T00180,S024,2024-03-04,3,Monday,19,Piura,Residencial,Jabón,Aseo,9.35,Ninguno,Soleado
+T00181,S029,2024-03-05,3,Tuesday,13,Trujillo,Mixta,Vino,Alcohol,9.24,Ninguno,Lluvioso
+T00182,S018,2024-06-27,6,Thursday,9,Cusco,Comercial,Cerveza,Alcohol,11.11,Combo,Nublado
+T00183,S049,2024-03-01,3,Friday,17,Huancayo,Comercial,Empanada,Comidas,11.23,Ninguno,Soleado
+T00184,S009,2024-05-20,5,Monday,11,Lima,Comercial,Gaseosa,Bebidas,4.03,Descuento,Soleado
+T00185,S046,2024-12-09,12,Monday,10,Lima,Residencial,Energizante,Bebidas,5.04,2x1,Lluvioso
+T00186,S025,2024-02-14,2,Wednesday,6,Cusco,Mixta,Vino,Alcohol,19.65,Combo,Soleado
+T00187,S020,2024-12-12,12,Thursday,19,Huancayo,Residencial,Jugo,Bebidas,2.69,Descuento,Nublado
+T00188,S009,2024-04-22,4,Monday,6,Cusco,Comercial,Empanada,Comidas,8.62,Descuento,Nublado
+T00189,S045,2024-02-08,2,Thursday,8,Cusco,Comercial,Sandwich,Comidas,13.2,Combo,Nublado
+T00190,S044,2024-12-22,12,Sunday,22,Lima,Mixta,Gaseosa,Bebidas,7.11,Descuento,Nublado
+T00191,S028,2024-12-19,12,Thursday,8,Arequipa,Mixta,Jugo,Bebidas,5.49,Ninguno,Lluvioso
+T00192,S049,2024-01-07,1,Sunday,9,Trujillo,Residencial,Jugo,Bebidas,5.1,Ninguno,Soleado
+T00193,S046,2024-10-20,10,Sunday,10,Piura,Comercial,Jugo,Bebidas,7.83,2x1,Soleado
+T00194,S004,2024-12-28,12,Saturday,15,Arequipa,Comercial,Paracetamol,Farmacia,9.22,Ninguno,Soleado
+T00195,S022,2024-09-30,9,Monday,14,Lima,Residencial,Jabón,Aseo,8.43,Combo,Soleado
+T00196,S024,2024-11-04,11,Monday,8,Piura,Comercial,Jabón,Aseo,6.78,Ninguno,Soleado
+T00197,S021,2024-05-04,5,Saturday,8,Trujillo,Mixta,Chocolate,Snacks,5.4,Ninguno,Soleado
+T00198,S028,2024-01-08,1,Monday,10,Lima,Residencial,Vino,Alcohol,22.53,Ninguno,Lluvioso
+T00199,S036,2024-01-05,1,Friday,22,Cusco,Residencial,Alcohol medicinal,Farmacia,5.12,Combo,Soleado
+T00200,S004,2024-04-11,4,Thursday,16,Lima,Comercial,Empanada,Comidas,14.81,Combo,Lluvioso
+T00201,S032,2024-12-30,12,Monday,8,Lima,Residencial,Agua,Bebidas,3.87,Descuento,Lluvioso
+T00202,S019,2024-01-22,1,Monday,16,Arequipa,Comercial,Galletas,Snacks,5.02,2x1,Soleado
+T00203,S036,2024-09-20,9,Friday,22,Huancayo,Mixta,Sandwich,Comidas,12.53,Ninguno,Soleado
+T00204,S045,2024-02-04,2,Sunday,7,Lima,Comercial,Alcohol medicinal,Farmacia,7.88,Ninguno,Nublado
+T00205,S008,2024-03-01,3,Friday,11,Piura,Residencial,Galletas,Snacks,1.36,Ninguno,Nublado
+T00206,S025,2024-08-02,8,Friday,19,Huancayo,Mixta,Hamburguesa,Comidas,7.19,Ninguno,Soleado
+T00207,S013,2024-08-01,8,Thursday,22,Huancayo,Comercial,Galletas,Snacks,4.57,Ninguno,Nublado
+T00208,S018,2024-02-28,2,Wednesday,13,Piura,Mixta,Alcohol medicinal,Farmacia,8.48,Ninguno,Nublado
+T00209,S004,2024-04-05,4,Friday,11,Lima,Mixta,Papas fritas,Snacks,5.65,Ninguno,Soleado
+T00210,S010,2024-04-09,4,Tuesday,20,Arequipa,Residencial,Sandwich,Comidas,9.94,Ninguno,Lluvioso
+T00211,S017,2024-06-23,6,Sunday,16,Trujillo,Residencial,Energizante,Bebidas,6.06,Descuento,Soleado
+T00212,S002,2024-04-10,4,Wednesday,21,Cusco,Residencial,Empanada,Comidas,13.59,Ninguno,Nublado
+T00213,S003,2024-01-16,1,Tuesday,14,Lima,Comercial,Hamburguesa,Comidas,5.36,Descuento,Soleado
+T00214,S044,2024-01-28,1,Sunday,11,Cusco,Residencial,Vino,Alcohol,7.1,Ninguno,Soleado
+T00215,S024,2024-10-29,10,Tuesday,15,Huancayo,Residencial,Shampoo,Aseo,6.64,Ninguno,Nublado
+T00216,S047,2024-01-29,1,Monday,16,Lima,Comercial,Vino,Alcohol,24.54,2x1,Lluvioso
+T00217,S036,2024-08-09,8,Friday,14,Piura,Residencial,Paracetamol,Farmacia,6.98,Ninguno,Soleado
+T00218,S015,2024-05-14,5,Tuesday,9,Arequipa,Residencial,Sandwich,Comidas,5.66,2x1,Soleado
+T00219,S026,2024-05-03,5,Friday,17,Piura,Comercial,Jugo,Bebidas,5.87,Descuento,Nublado
+T00220,S047,2024-01-25,1,Thursday,15,Arequipa,Residencial,Empanada,Comidas,13.1,Combo,Lluvioso
+T00221,S021,2024-06-07,6,Friday,14,Huancayo,Comercial,Papas fritas,Snacks,1.67,Combo,Soleado
+T00222,S043,2024-02-15,2,Thursday,10,Huancayo,Comercial,Alcohol medicinal,Farmacia,4.46,Descuento,Nublado
+T00223,S012,2024-04-17,4,Wednesday,6,Lima,Mixta,Shampoo,Aseo,11.62,Descuento,Nublado
+T00224,S043,2024-05-18,5,Saturday,10,Lima,Comercial,Empanada,Comidas,13.29,Ninguno,Nublado
+T00225,S044,2024-09-01,9,Sunday,21,Piura,Comercial,Shampoo,Aseo,10.11,Ninguno,Lluvioso
+T00226,S037,2024-05-16,5,Thursday,10,Piura,Residencial,Vino,Alcohol,22.11,2x1,Lluvioso
+T00227,S020,2024-06-03,6,Monday,8,Cusco,Residencial,Shampoo,Aseo,10.09,Combo,Nublado
+T00228,S026,2024-04-26,4,Friday,8,Arequipa,Residencial,Hamburguesa,Comidas,10.74,Ninguno,Nublado
+T00229,S021,2024-12-30,12,Monday,15,Arequipa,Mixta,Agua,Bebidas,3.05,Ninguno,Soleado
+T00230,S045,2024-04-08,4,Monday,17,Piura,Mixta,Sandwich,Comidas,9.01,Ninguno,Lluvioso
+T00231,S036,2024-08-08,8,Thursday,13,Lima,Mixta,Alcohol medicinal,Farmacia,8.85,2x1,Lluvioso
+T00232,S006,2024-01-24,1,Wednesday,15,Cusco,Mixta,Papas fritas,Snacks,3.13,Ninguno,Soleado
+T00233,S013,2024-12-22,12,Sunday,15,Huancayo,Residencial,Shampoo,Aseo,9.13,Ninguno,Lluvioso
+T00234,S016,2024-12-08,12,Sunday,10,Lima,Mixta,Hamburguesa,Comidas,7.2,Ninguno,Lluvioso
+T00235,S021,2024-02-28,2,Wednesday,15,Piura,Mixta,Chocolate,Snacks,1.21,2x1,Soleado
+T00236,S039,2024-12-22,12,Sunday,11,Lima,Residencial,Jugo,Bebidas,4.69,Ninguno,Soleado
+T00237,S001,2024-05-05,5,Sunday,22,Piura,Mixta,Agua,Bebidas,4.01,Ninguno,Nublado
+T00238,S004,2024-12-02,12,Monday,8,Piura,Mixta,Vino,Alcohol,21.15,Ninguno,Nublado
+T00239,S016,2024-08-03,8,Saturday,11,Lima,Residencial,Energizante,Bebidas,3.85,Ninguno,Soleado
+T00240,S019,2024-02-12,2,Monday,15,Lima,Mixta,Vino,Alcohol,17.87,Ninguno,Nublado
+T00241,S033,2024-06-27,6,Thursday,21,Cusco,Residencial,Energizante,Bebidas,3.15,Ninguno,Lluvioso
+T00242,S019,2024-11-13,11,Wednesday,21,Lima,Mixta,Paracetamol,Farmacia,4.39,Ninguno,Nublado
+T00243,S049,2024-05-07,5,Tuesday,15,Lima,Residencial,Galletas,Snacks,3.74,2x1,Soleado
+T00244,S027,2024-08-06,8,Tuesday,22,Cusco,Mixta,Empanada,Comidas,10.5,Ninguno,Soleado
+T00245,S010,2024-06-05,6,Wednesday,20,Huancayo,Mixta,Gaseosa,Bebidas,5.74,2x1,Lluvioso
+T00246,S021,2024-03-13,3,Wednesday,6,Huancayo,Residencial,Empanada,Comidas,9.49,2x1,Soleado
+T00247,S046,2024-09-04,9,Wednesday,9,Piura,Comercial,Agua,Bebidas,4.31,Ninguno,Soleado
+T00248,S009,2024-04-15,4,Monday,11,Huancayo,Residencial,Galletas,Snacks,4.74,Descuento,Nublado
+T00249,S046,2024-09-04,9,Wednesday,22,Arequipa,Residencial,Gaseosa,Bebidas,2.55,Descuento,Soleado
+T00250,S036,2024-03-09,3,Saturday,16,Piura,Mixta,Shampoo,Aseo,11.08,Descuento,Nublado
+T00251,S049,2024-11-14,11,Thursday,18,Huancayo,Mixta,Galletas,Snacks,1.34,Descuento,Lluvioso
+T00252,S043,2024-10-10,10,Thursday,6,Huancayo,Residencial,Gaseosa,Bebidas,4.47,Descuento,Soleado
+T00253,S028,2024-02-06,2,Tuesday,20,Cusco,Comercial,Chocolate,Snacks,2.01,Ninguno,Lluvioso
+T00254,S045,2024-07-25,7,Thursday,6,Arequipa,Comercial,Alcohol medicinal,Farmacia,9.17,Ninguno,Nublado
+T00255,S046,2024-10-29,10,Tuesday,8,Cusco,Residencial,Energizante,Bebidas,5.09,Combo,Lluvioso
+T00256,S041,2024-02-01,2,Thursday,10,Cusco,Comercial,Papas fritas,Snacks,2.59,2x1,Lluvioso
+T00257,S047,2024-04-27,4,Saturday,10,Piura,Mixta,Energizante,Bebidas,4.49,Descuento,Lluvioso
+T00258,S010,2024-04-21,4,Sunday,18,Lima,Mixta,Shampoo,Aseo,9.86,2x1,Nublado
+T00259,S009,2024-04-24,4,Wednesday,9,Piura,Residencial,Chocolate,Snacks,2.34,Ninguno,Lluvioso
+T00260,S047,2024-06-23,6,Sunday,6,Huancayo,Residencial,Empanada,Comidas,8.28,2x1,Lluvioso
+T00261,S001,2024-07-23,7,Tuesday,21,Lima,Residencial,Jabón,Aseo,10.18,Ninguno,Nublado
+T00262,S001,2024-08-28,8,Wednesday,22,Arequipa,Residencial,Sandwich,Comidas,7.53,Ninguno,Soleado
+T00263,S030,2024-04-02,4,Tuesday,21,Lima,Mixta,Cerveza,Alcohol,22.77,Ninguno,Lluvioso
+T00264,S045,2024-02-26,2,Monday,13,Piura,Mixta,Galletas,Snacks,5.84,Ninguno,Lluvioso
+T00265,S030,2024-11-30,11,Saturday,15,Trujillo,Mixta,Empanada,Comidas,8.69,Ninguno,Lluvioso
+T00266,S045,2024-08-22,8,Thursday,7,Huancayo,Residencial,Energizante,Bebidas,6.64,2x1,Nublado
+T00267,S031,2024-11-13,11,Wednesday,12,Piura,Residencial,Sandwich,Comidas,8.47,Ninguno,Soleado
+T00268,S002,2024-10-03,10,Thursday,9,Piura,Residencial,Shampoo,Aseo,5.48,Descuento,Nublado
+T00269,S038,2024-04-03,4,Wednesday,17,Piura,Mixta,Gaseosa,Bebidas,6.93,2x1,Lluvioso
+T00270,S006,2024-08-09,8,Friday,6,Huancayo,Residencial,Cerveza,Alcohol,20.76,2x1,Soleado
+T00271,S048,2024-12-05,12,Thursday,10,Cusco,Residencial,Vino,Alcohol,21.66,Ninguno,Lluvioso
+T00272,S012,2024-08-04,8,Sunday,19,Arequipa,Mixta,Jabón,Aseo,11.74,Combo,Nublado
+T00273,S048,2024-10-25,10,Friday,15,Arequipa,Residencial,Empanada,Comidas,13.92,2x1,Soleado
+T00274,S025,2024-10-17,10,Thursday,11,Huancayo,Comercial,Energizante,Bebidas,7.02,Ninguno,Lluvioso
+T00275,S021,2024-03-08,3,Friday,16,Piura,Comercial,Jabón,Aseo,9.06,2x1,Lluvioso
+T00276,S044,2024-09-24,9,Tuesday,9,Huancayo,Residencial,Galletas,Snacks,5.16,2x1,Lluvioso
+T00277,S047,2024-05-12,5,Sunday,14,Arequipa,Mixta,Agua,Bebidas,2.94,Ninguno,Nublado
+T00278,S026,2024-07-27,7,Saturday,19,Huancayo,Comercial,Vino,Alcohol,19.03,Descuento,Lluvioso
+T00279,S030,2024-04-03,4,Wednesday,18,Trujillo,Comercial,Jabón,Aseo,4.25,Ninguno,Nublado
+T00280,S020,2024-07-27,7,Saturday,21,Huancayo,Comercial,Empanada,Comidas,12.37,2x1,Lluvioso
+T00281,S030,2024-10-19,10,Saturday,15,Lima,Mixta,Energizante,Bebidas,2.37,Combo,Soleado
+T00282,S040,2024-01-11,1,Thursday,7,Piura,Mixta,Vino,Alcohol,8.8,Ninguno,Nublado
+T00283,S037,2024-03-12,3,Tuesday,13,Cusco,Mixta,Hamburguesa,Comidas,7.56,2x1,Soleado
+T00284,S035,2024-10-08,10,Tuesday,9,Piura,Comercial,Alcohol medicinal,Farmacia,4.01,Descuento,Lluvioso
+T00285,S015,2024-04-21,4,Sunday,22,Lima,Mixta,Papas fritas,Snacks,3.29,Descuento,Soleado
+T00286,S035,2024-04-15,4,Monday,20,Trujillo,Residencial,Energizante,Bebidas,5.14,Ninguno,Lluvioso
+T00287,S004,2024-02-17,2,Saturday,21,Cusco,Mixta,Energizante,Bebidas,7.34,Ninguno,Soleado
+T00288,S008,2024-02-08,2,Thursday,13,Lima,Residencial,Hamburguesa,Comidas,6.83,Ninguno,Soleado
+T00289,S025,2024-09-03,9,Tuesday,13,Huancayo,Residencial,Alcohol medicinal,Farmacia,4.23,Ninguno,Nublado
+T00290,S001,2024-05-06,5,Monday,14,Huancayo,Residencial,Chocolate,Snacks,4.0,2x1,Soleado
+T00291,S002,2024-09-29,9,Sunday,13,Piura,Mixta,Jabón,Aseo,10.08,Ninguno,Lluvioso
+T00292,S015,2024-09-02,9,Monday,22,Huancayo,Mixta,Shampoo,Aseo,6.72,Ninguno,Nublado
+T00293,S009,2024-07-19,7,Friday,15,Cusco,Mixta,Jabón,Aseo,4.2,2x1,Nublado
+T00294,S017,2024-10-14,10,Monday,20,Cusco,Residencial,Shampoo,Aseo,10.01,Combo,Lluvioso
+T00295,S040,2024-08-08,8,Thursday,13,Huancayo,Comercial,Galletas,Snacks,4.88,Ninguno,Lluvioso
+T00296,S036,2024-12-04,12,Wednesday,12,Cusco,Mixta,Gaseosa,Bebidas,3.77,2x1,Nublado
+T00297,S048,2024-02-27,2,Tuesday,18,Cusco,Comercial,Agua,Bebidas,6.77,Ninguno,Nublado
+T00298,S003,2024-10-22,10,Tuesday,6,Cusco,Comercial,Vino,Alcohol,12.49,Ninguno,Soleado
+T00299,S044,2024-09-06,9,Friday,15,Lima,Comercial,Vino,Alcohol,7.06,Ninguno,Lluvioso
+T00300,S022,2024-10-08,10,Tuesday,20,Piura,Mixta,Chocolate,Snacks,3.2,Ninguno,Lluvioso
+T00301,S004,2024-10-20,10,Sunday,20,Piura,Comercial,Alcohol medicinal,Farmacia,8.13,Descuento,Soleado
+T00302,S045,2024-03-31,3,Sunday,8,Huancayo,Mixta,Hamburguesa,Comidas,12.8,2x1,Soleado
+T00303,S028,2024-12-23,12,Monday,10,Lima,Mixta,Papas fritas,Snacks,3.66,2x1,Lluvioso
+T00304,S042,2024-04-03,4,Wednesday,14,Piura,Residencial,Chocolate,Snacks,3.29,Ninguno,Soleado
+T00305,S006,2024-11-30,11,Saturday,22,Huancayo,Comercial,Sandwich,Comidas,7.09,Descuento,Nublado
+T00306,S023,2024-06-11,6,Tuesday,19,Huancayo,Mixta,Jabón,Aseo,9.43,Descuento,Lluvioso
+T00307,S044,2024-08-04,8,Sunday,7,Piura,Mixta,Shampoo,Aseo,10.76,Ninguno,Nublado
+T00308,S001,2024-01-19,1,Friday,16,Cusco,Mixta,Jugo,Bebidas,4.42,Ninguno,Lluvioso
+T00309,S028,2024-12-20,12,Friday,9,Trujillo,Comercial,Galletas,Snacks,1.91,Ninguno,Lluvioso
+T00310,S042,2024-12-17,12,Tuesday,18,Piura,Mixta,Hamburguesa,Comidas,7.2,Ninguno,Lluvioso
+T00311,S046,2024-05-04,5,Saturday,21,Arequipa,Comercial,Galletas,Snacks,2.99,2x1,Soleado
+T00312,S003,2024-04-17,4,Wednesday,9,Trujillo,Mixta,Alcohol medicinal,Farmacia,3.27,Ninguno,Lluvioso
+T00313,S011,2024-04-15,4,Monday,16,Arequipa,Residencial,Cerveza,Alcohol,14.37,Ninguno,Soleado
+T00314,S023,2024-09-07,9,Saturday,15,Arequipa,Residencial,Vino,Alcohol,7.25,2x1,Soleado
+T00315,S010,2024-01-30,1,Tuesday,7,Trujillo,Mixta,Gaseosa,Bebidas,6.14,Descuento,Soleado
+T00316,S016,2024-04-08,4,Monday,16,Arequipa,Residencial,Shampoo,Aseo,11.42,Combo,Lluvioso
+T00317,S027,2024-08-28,8,Wednesday,8,Trujillo,Mixta,Galletas,Snacks,1.2,Descuento,Lluvioso
+T00318,S028,2024-10-09,10,Wednesday,20,Huancayo,Mixta,Vino,Alcohol,21.53,Ninguno,Lluvioso
+T00319,S019,2024-04-27,4,Saturday,20,Cusco,Residencial,Paracetamol,Farmacia,7.86,Ninguno,Nublado
+T00320,S019,2024-04-15,4,Monday,10,Arequipa,Mixta,Cerveza,Alcohol,9.25,Ninguno,Nublado
+T00321,S009,2024-02-03,2,Saturday,18,Arequipa,Comercial,Paracetamol,Farmacia,8.78,Ninguno,Lluvioso
+T00322,S007,2024-10-14,10,Monday,9,Piura,Comercial,Shampoo,Aseo,11.94,2x1,Lluvioso
+T00323,S017,2024-03-08,3,Friday,15,Huancayo,Mixta,Sandwich,Comidas,11.19,2x1,Lluvioso
+T00324,S011,2024-12-17,12,Tuesday,21,Huancayo,Mixta,Jabón,Aseo,6.03,2x1,Soleado
+T00325,S049,2024-12-13,12,Friday,6,Cusco,Residencial,Chocolate,Snacks,5.9,Ninguno,Lluvioso
+T00326,S042,2024-06-30,6,Sunday,7,Lima,Comercial,Vino,Alcohol,23.92,Ninguno,Nublado
+T00327,S026,2024-10-29,10,Tuesday,10,Huancayo,Residencial,Paracetamol,Farmacia,3.88,Descuento,Lluvioso
+T00328,S015,2024-07-19,7,Friday,15,Lima,Comercial,Cerveza,Alcohol,18.03,2x1,Soleado
+T00329,S036,2024-01-12,1,Friday,10,Cusco,Residencial,Shampoo,Aseo,5.15,2x1,Soleado
+T00330,S014,2024-01-22,1,Monday,19,Trujillo,Residencial,Agua,Bebidas,5.49,2x1,Nublado
+T00331,S027,2024-08-18,8,Sunday,19,Huancayo,Residencial,Jabón,Aseo,7.99,2x1,Lluvioso
+T00332,S035,2024-12-08,12,Sunday,13,Arequipa,Comercial,Sandwich,Comidas,5.13,Ninguno,Lluvioso
+T00333,S039,2024-05-12,5,Sunday,14,Trujillo,Comercial,Jugo,Bebidas,7.93,Ninguno,Soleado
+T00334,S029,2024-02-23,2,Friday,16,Trujillo,Comercial,Chocolate,Snacks,2.63,Descuento,Lluvioso
+T00335,S013,2024-04-21,4,Sunday,6,Arequipa,Mixta,Jabón,Aseo,4.74,Ninguno,Soleado
+T00336,S048,2024-07-06,7,Saturday,20,Trujillo,Residencial,Paracetamol,Farmacia,7.56,Ninguno,Nublado
+T00337,S035,2024-02-08,2,Thursday,17,Huancayo,Mixta,Galletas,Snacks,2.36,Descuento,Nublado
+T00338,S016,2024-08-19,8,Monday,13,Arequipa,Comercial,Empanada,Comidas,8.37,Ninguno,Soleado
+T00339,S029,2024-09-25,9,Wednesday,9,Arequipa,Residencial,Alcohol medicinal,Farmacia,8.71,Ninguno,Nublado
+T00340,S042,2024-12-18,12,Wednesday,9,Huancayo,Comercial,Hamburguesa,Comidas,9.01,Ninguno,Lluvioso
+T00341,S044,2024-02-16,2,Friday,11,Lima,Comercial,Paracetamol,Farmacia,5.08,Combo,Soleado
+T00342,S043,2024-07-06,7,Saturday,7,Cusco,Residencial,Cerveza,Alcohol,8.21,2x1,Soleado
+T00343,S039,2024-10-09,10,Wednesday,19,Lima,Comercial,Vino,Alcohol,7.53,Descuento,Lluvioso
+T00344,S008,2024-05-11,5,Saturday,16,Piura,Comercial,Vino,Alcohol,24.45,Ninguno,Lluvioso
+T00345,S029,2024-05-31,5,Friday,10,Piura,Mixta,Paracetamol,Farmacia,3.6,Ninguno,Nublado
+T00346,S031,2024-06-09,6,Sunday,16,Huancayo,Residencial,Chocolate,Snacks,1.95,Ninguno,Nublado
+T00347,S031,2024-01-11,1,Thursday,9,Arequipa,Comercial,Cerveza,Alcohol,14.46,2x1,Nublado
+T00348,S047,2024-06-15,6,Saturday,22,Lima,Comercial,Shampoo,Aseo,6.99,Ninguno,Lluvioso
+T00349,S021,2024-12-04,12,Wednesday,15,Cusco,Residencial,Hamburguesa,Comidas,8.83,Ninguno,Nublado
+T00350,S001,2024-02-14,2,Wednesday,13,Trujillo,Mixta,Energizante,Bebidas,2.29,Ninguno,Soleado
+T00351,S005,2024-09-22,9,Sunday,16,Huancayo,Residencial,Gaseosa,Bebidas,6.78,Ninguno,Soleado
+T00352,S033,2024-01-25,1,Thursday,18,Arequipa,Comercial,Vino,Alcohol,15.3,2x1,Lluvioso
+T00353,S045,2024-03-08,3,Friday,19,Lima,Comercial,Hamburguesa,Comidas,5.97,2x1,Lluvioso
+T00354,S043,2024-06-23,6,Sunday,17,Trujillo,Comercial,Jugo,Bebidas,3.95,Descuento,Lluvioso
+T00355,S023,2024-08-01,8,Thursday,17,Cusco,Mixta,Jugo,Bebidas,3.09,2x1,Soleado
+T00356,S023,2024-11-05,11,Tuesday,21,Cusco,Mixta,Cerveza,Alcohol,24.84,Ninguno,Lluvioso
+T00357,S048,2024-12-28,12,Saturday,18,Arequipa,Comercial,Agua,Bebidas,3.89,Ninguno,Lluvioso
+T00358,S017,2024-12-05,12,Thursday,11,Arequipa,Residencial,Jabón,Aseo,6.09,Ninguno,Soleado
+T00359,S035,2024-01-28,1,Sunday,14,Piura,Residencial,Galletas,Snacks,4.67,Ninguno,Lluvioso
+T00360,S019,2024-08-12,8,Monday,22,Cusco,Residencial,Jabón,Aseo,8.78,Descuento,Soleado
+T00361,S006,2024-01-25,1,Thursday,21,Huancayo,Mixta,Agua,Bebidas,3.61,Ninguno,Soleado
+T00362,S009,2024-12-17,12,Tuesday,14,Arequipa,Mixta,Galletas,Snacks,3.0,2x1,Nublado
+T00363,S031,2024-06-02,6,Sunday,9,Lima,Mixta,Sandwich,Comidas,13.86,Descuento,Lluvioso
+T00364,S009,2024-04-14,4,Sunday,13,Arequipa,Mixta,Alcohol medicinal,Farmacia,5.5,Descuento,Soleado
+T00365,S020,2024-11-03,11,Sunday,12,Piura,Comercial,Cerveza,Alcohol,22.84,2x1,Lluvioso
+T00366,S022,2024-08-23,8,Friday,22,Trujillo,Comercial,Agua,Bebidas,6.36,Ninguno,Nublado
+T00367,S016,2024-11-10,11,Sunday,20,Huancayo,Residencial,Cerveza,Alcohol,18.19,Descuento,Lluvioso
+T00368,S018,2024-04-20,4,Saturday,13,Arequipa,Comercial,Vino,Alcohol,20.92,Descuento,Nublado
+T00369,S026,2024-08-02,8,Friday,11,Trujillo,Comercial,Jugo,Bebidas,5.06,2x1,Lluvioso
+T00370,S045,2024-06-24,6,Monday,12,Huancayo,Mixta,Hamburguesa,Comidas,5.82,Descuento,Soleado
+T00371,S017,2024-04-13,4,Saturday,12,Arequipa,Residencial,Hamburguesa,Comidas,10.49,Ninguno,Lluvioso
+T00372,S014,2024-08-14,8,Wednesday,21,Trujillo,Mixta,Cerveza,Alcohol,22.71,Ninguno,Nublado
+T00373,S049,2024-11-30,11,Saturday,20,Huancayo,Mixta,Chocolate,Snacks,5.32,Ninguno,Lluvioso
+T00374,S027,2024-09-25,9,Wednesday,6,Piura,Comercial,Vino,Alcohol,8.32,Ninguno,Nublado
+T00375,S043,2024-11-05,11,Tuesday,7,Lima,Residencial,Paracetamol,Farmacia,7.71,2x1,Soleado
+T00376,S040,2024-09-29,9,Sunday,21,Piura,Mixta,Papas fritas,Snacks,5.98,2x1,Nublado
+T00377,S001,2024-07-19,7,Friday,10,Piura,Residencial,Papas fritas,Snacks,4.71,2x1,Nublado
+T00378,S042,2024-04-06,4,Saturday,6,Cusco,Residencial,Chocolate,Snacks,1.55,Ninguno,Soleado
+T00379,S004,2024-02-25,2,Sunday,22,Trujillo,Comercial,Paracetamol,Farmacia,8.45,Descuento,Lluvioso
+T00380,S042,2024-11-18,11,Monday,12,Piura,Comercial,Alcohol medicinal,Farmacia,5.28,Descuento,Nublado
+T00381,S030,2024-07-02,7,Tuesday,11,Cusco,Mixta,Alcohol medicinal,Farmacia,4.57,Ninguno,Soleado
+T00382,S015,2024-01-22,1,Monday,16,Cusco,Comercial,Jabón,Aseo,6.52,Ninguno,Nublado
+T00383,S016,2024-04-19,4,Friday,8,Arequipa,Residencial,Vino,Alcohol,9.27,Combo,Soleado
+T00384,S004,2024-03-01,3,Friday,13,Piura,Residencial,Vino,Alcohol,11.4,2x1,Soleado
+T00385,S019,2024-07-24,7,Wednesday,19,Arequipa,Comercial,Galletas,Snacks,4.27,Ninguno,Soleado
+T00386,S016,2024-02-14,2,Wednesday,6,Piura,Residencial,Cerveza,Alcohol,19.41,Ninguno,Lluvioso
+T00387,S043,2024-03-27,3,Wednesday,11,Huancayo,Residencial,Chocolate,Snacks,3.25,2x1,Lluvioso
+T00388,S047,2024-04-14,4,Sunday,6,Trujillo,Comercial,Vino,Alcohol,13.26,Combo,Nublado
+T00389,S022,2024-06-18,6,Tuesday,17,Lima,Mixta,Paracetamol,Farmacia,4.4,Descuento,Nublado
+T00390,S024,2024-07-21,7,Sunday,15,Lima,Residencial,Sandwich,Comidas,10.44,Ninguno,Soleado
+T00391,S048,2024-05-16,5,Thursday,9,Lima,Residencial,Shampoo,Aseo,8.28,Combo,Nublado
+T00392,S015,2024-07-30,7,Tuesday,10,Trujillo,Comercial,Agua,Bebidas,4.03,Descuento,Soleado
+T00393,S019,2024-06-03,6,Monday,20,Cusco,Residencial,Hamburguesa,Comidas,11.24,Combo,Soleado
+T00394,S001,2024-09-29,9,Sunday,17,Lima,Residencial,Empanada,Comidas,14.41,Descuento,Nublado
+T00395,S003,2024-02-18,2,Sunday,15,Huancayo,Comercial,Jabón,Aseo,9.99,Ninguno,Lluvioso
+T00396,S036,2024-03-08,3,Friday,16,Piura,Comercial,Vino,Alcohol,14.49,Ninguno,Nublado
+T00397,S016,2024-03-06,3,Wednesday,15,Lima,Mixta,Jabón,Aseo,10.16,Ninguno,Nublado
+T00398,S019,2024-12-04,12,Wednesday,7,Cusco,Residencial,Alcohol medicinal,Farmacia,6.89,Ninguno,Nublado
+T00399,S021,2024-09-18,9,Wednesday,16,Trujillo,Mixta,Sandwich,Comidas,10.35,Ninguno,Lluvioso
+T00400,S017,2024-11-23,11,Saturday,16,Huancayo,Comercial,Jabón,Aseo,4.42,Ninguno,Lluvioso
+T00401,S006,2024-08-10,8,Saturday,6,Cusco,Mixta,Vino,Alcohol,8.36,Ninguno,Nublado
+T00402,S012,2024-05-04,5,Saturday,16,Lima,Mixta,Cerveza,Alcohol,21.3,Ninguno,Nublado
+T00403,S044,2024-09-09,9,Monday,19,Huancayo,Comercial,Shampoo,Aseo,9.8,2x1,Nublado
+T00404,S039,2024-03-26,3,Tuesday,17,Piura,Mixta,Alcohol medicinal,Farmacia,7.3,Ninguno,Lluvioso
+T00405,S029,2024-10-15,10,Tuesday,17,Piura,Mixta,Galletas,Snacks,3.88,Descuento,Nublado
+T00406,S030,2024-10-13,10,Sunday,12,Lima,Residencial,Galletas,Snacks,3.25,Ninguno,Soleado
+T00407,S023,2024-06-20,6,Thursday,15,Cusco,Residencial,Hamburguesa,Comidas,7.85,Combo,Soleado
+T00408,S012,2024-09-07,9,Saturday,21,Lima,Comercial,Jabón,Aseo,5.76,Ninguno,Soleado
+T00409,S037,2024-04-17,4,Wednesday,18,Trujillo,Comercial,Vino,Alcohol,17.05,Ninguno,Lluvioso
+T00410,S021,2024-01-05,1,Friday,16,Piura,Residencial,Agua,Bebidas,3.21,Ninguno,Lluvioso
+T00411,S016,2024-07-16,7,Tuesday,6,Cusco,Mixta,Vino,Alcohol,24.71,Combo,Lluvioso
+T00412,S035,2024-07-07,7,Sunday,9,Trujillo,Comercial,Energizante,Bebidas,3.81,Ninguno,Soleado
+T00413,S010,2024-07-15,7,Monday,7,Huancayo,Comercial,Jabón,Aseo,9.61,Combo,Nublado
+T00414,S034,2024-06-19,6,Wednesday,20,Huancayo,Mixta,Jabón,Aseo,6.71,Ninguno,Lluvioso
+T00415,S015,2024-04-10,4,Wednesday,8,Lima,Residencial,Shampoo,Aseo,8.87,Descuento,Nublado
+T00416,S038,2024-01-28,1,Sunday,15,Cusco,Residencial,Galletas,Snacks,5.77,Ninguno,Nublado
+T00417,S043,2024-05-29,5,Wednesday,9,Lima,Mixta,Energizante,Bebidas,7.6,2x1,Nublado
+T00418,S049,2024-04-07,4,Sunday,22,Cusco,Comercial,Jugo,Bebidas,4.74,Descuento,Lluvioso
+T00419,S045,2024-03-16,3,Saturday,9,Cusco,Mixta,Chocolate,Snacks,2.56,Ninguno,Lluvioso
+T00420,S005,2024-07-24,7,Wednesday,9,Cusco,Mixta,Shampoo,Aseo,7.88,Ninguno,Soleado
+T00421,S031,2024-01-10,1,Wednesday,11,Arequipa,Mixta,Shampoo,Aseo,10.2,Ninguno,Soleado
+T00422,S001,2024-11-03,11,Sunday,13,Huancayo,Mixta,Hamburguesa,Comidas,12.92,Ninguno,Nublado
+T00423,S001,2024-03-11,3,Monday,21,Huancayo,Mixta,Vino,Alcohol,11.37,2x1,Soleado
+T00424,S048,2024-08-24,8,Saturday,8,Piura,Residencial,Sandwich,Comidas,7.59,Ninguno,Soleado
+T00425,S047,2024-07-16,7,Tuesday,18,Lima,Mixta,Agua,Bebidas,7.69,2x1,Lluvioso
+T00426,S012,2024-09-14,9,Saturday,9,Arequipa,Residencial,Jabón,Aseo,11.82,Descuento,Nublado
+T00427,S032,2024-07-14,7,Sunday,14,Cusco,Mixta,Paracetamol,Farmacia,9.27,2x1,Soleado
+T00428,S039,2024-09-08,9,Sunday,14,Cusco,Residencial,Hamburguesa,Comidas,7.24,Descuento,Soleado
+T00429,S038,2024-12-07,12,Saturday,21,Huancayo,Mixta,Vino,Alcohol,19.64,2x1,Soleado
+T00430,S023,2024-07-19,7,Friday,19,Arequipa,Mixta,Papas fritas,Snacks,5.83,2x1,Nublado
+T00431,S010,2024-10-30,10,Wednesday,11,Cusco,Mixta,Agua,Bebidas,4.95,Descuento,Lluvioso
+T00432,S044,2024-04-17,4,Wednesday,22,Cusco,Mixta,Paracetamol,Farmacia,4.48,Descuento,Lluvioso
+T00433,S002,2024-09-27,9,Friday,19,Huancayo,Comercial,Shampoo,Aseo,6.78,Ninguno,Lluvioso
+T00434,S037,2024-01-04,1,Thursday,15,Lima,Comercial,Sandwich,Comidas,8.91,Descuento,Soleado
+T00435,S013,2024-06-16,6,Sunday,21,Huancayo,Mixta,Cerveza,Alcohol,11.94,Descuento,Nublado
+T00436,S041,2024-06-28,6,Friday,7,Cusco,Mixta,Hamburguesa,Comidas,9.46,Ninguno,Lluvioso
+T00437,S010,2024-11-08,11,Friday,18,Cusco,Residencial,Papas fritas,Snacks,2.37,Ninguno,Nublado
+T00438,S039,2024-12-27,12,Friday,7,Arequipa,Mixta,Sandwich,Comidas,11.52,Ninguno,Nublado
+T00439,S049,2024-05-24,5,Friday,18,Arequipa,Comercial,Jabón,Aseo,4.31,Ninguno,Nublado
+T00440,S018,2024-02-21,2,Wednesday,6,Huancayo,Comercial,Jabón,Aseo,5.07,Descuento,Nublado
+T00441,S027,2024-03-27,3,Wednesday,6,Huancayo,Comercial,Hamburguesa,Comidas,14.11,Descuento,Nublado
+T00442,S029,2024-12-15,12,Sunday,18,Arequipa,Comercial,Chocolate,Snacks,5.11,Ninguno,Nublado
+T00443,S036,2024-06-30,6,Sunday,12,Cusco,Comercial,Sandwich,Comidas,7.23,Combo,Soleado
+T00444,S005,2024-04-20,4,Saturday,6,Arequipa,Mixta,Cerveza,Alcohol,21.7,Descuento,Lluvioso
+T00445,S021,2024-09-21,9,Saturday,7,Piura,Comercial,Jabón,Aseo,9.29,2x1,Nublado
+T00446,S002,2024-12-11,12,Wednesday,11,Cusco,Comercial,Shampoo,Aseo,11.86,2x1,Soleado
+T00447,S021,2024-06-03,6,Monday,11,Piura,Comercial,Paracetamol,Farmacia,9.38,Ninguno,Soleado
+T00448,S022,2024-09-04,9,Wednesday,13,Piura,Comercial,Papas fritas,Snacks,4.78,2x1,Soleado
+T00449,S049,2024-11-22,11,Friday,14,Trujillo,Comercial,Vino,Alcohol,24.9,2x1,Nublado
+T00450,S025,2024-08-07,8,Wednesday,13,Trujillo,Residencial,Chocolate,Snacks,1.65,2x1,Soleado
+T00451,S001,2024-06-30,6,Sunday,8,Huancayo,Residencial,Galletas,Snacks,5.17,Descuento,Nublado
+T00452,S010,2024-07-27,7,Saturday,6,Trujillo,Residencial,Paracetamol,Farmacia,3.1,Ninguno,Nublado
+T00453,S010,2024-02-04,2,Sunday,9,Arequipa,Residencial,Hamburguesa,Comidas,12.55,Descuento,Lluvioso
+T00454,S007,2024-03-15,3,Friday,7,Lima,Comercial,Chocolate,Snacks,2.33,Descuento,Lluvioso
+T00455,S022,2024-05-11,5,Saturday,9,Cusco,Residencial,Energizante,Bebidas,2.56,Ninguno,Nublado
+T00456,S047,2024-08-03,8,Saturday,16,Trujillo,Residencial,Shampoo,Aseo,5.75,Ninguno,Soleado
+T00457,S047,2024-02-08,2,Thursday,22,Cusco,Mixta,Sandwich,Comidas,11.74,Ninguno,Soleado
+T00458,S017,2024-01-02,1,Tuesday,14,Arequipa,Mixta,Shampoo,Aseo,11.49,Ninguno,Soleado
+T00459,S029,2024-03-09,3,Saturday,18,Piura,Residencial,Agua,Bebidas,3.61,Ninguno,Nublado
+T00460,S020,2024-11-30,11,Saturday,9,Piura,Comercial,Agua,Bebidas,5.91,Descuento,Lluvioso
+T00461,S045,2024-02-27,2,Tuesday,21,Lima,Residencial,Paracetamol,Farmacia,9.92,Ninguno,Nublado
+T00462,S025,2024-05-16,5,Thursday,15,Lima,Comercial,Hamburguesa,Comidas,5.88,Ninguno,Soleado
+T00463,S042,2024-06-27,6,Thursday,18,Cusco,Mixta,Gaseosa,Bebidas,5.95,Ninguno,Soleado
+T00464,S006,2024-10-26,10,Saturday,15,Arequipa,Mixta,Gaseosa,Bebidas,2.77,2x1,Lluvioso
+T00465,S043,2024-10-25,10,Friday,22,Piura,Residencial,Vino,Alcohol,6.32,Ninguno,Nublado
+T00466,S027,2024-09-11,9,Wednesday,13,Piura,Residencial,Jugo,Bebidas,5.99,Descuento,Soleado
+T00467,S028,2024-07-08,7,Monday,15,Trujillo,Mixta,Cerveza,Alcohol,17.18,Ninguno,Soleado
+T00468,S048,2024-06-25,6,Tuesday,10,Huancayo,Mixta,Shampoo,Aseo,9.62,2x1,Lluvioso
+T00469,S006,2024-08-28,8,Wednesday,11,Piura,Residencial,Alcohol medicinal,Farmacia,4.72,Combo,Nublado
+T00470,S009,2024-05-29,5,Wednesday,11,Piura,Mixta,Cerveza,Alcohol,17.84,2x1,Lluvioso
+T00471,S003,2024-03-19,3,Tuesday,7,Lima,Residencial,Chocolate,Snacks,1.42,Combo,Lluvioso
+T00472,S016,2024-07-28,7,Sunday,12,Lima,Residencial,Empanada,Comidas,9.13,Ninguno,Soleado
+T00473,S002,2024-01-24,1,Wednesday,8,Huancayo,Mixta,Galletas,Snacks,2.03,Descuento,Nublado
+T00474,S023,2024-05-31,5,Friday,7,Huancayo,Mixta,Hamburguesa,Comidas,5.45,Combo,Nublado
+T00475,S046,2024-05-28,5,Tuesday,6,Trujillo,Mixta,Chocolate,Snacks,4.45,Ninguno,Soleado
+T00476,S011,2024-08-01,8,Thursday,10,Lima,Residencial,Sandwich,Comidas,7.74,Ninguno,Soleado
+T00477,S025,2024-12-08,12,Sunday,7,Lima,Mixta,Hamburguesa,Comidas,14.03,2x1,Soleado
+T00478,S022,2024-04-30,4,Tuesday,11,Lima,Residencial,Sandwich,Comidas,6.57,2x1,Soleado
+T00479,S012,2024-12-24,12,Tuesday,18,Lima,Mixta,Paracetamol,Farmacia,8.71,2x1,Lluvioso
+T00480,S032,2024-07-23,7,Tuesday,18,Piura,Mixta,Gaseosa,Bebidas,3.58,Combo,Nublado
+T00481,S026,2024-01-15,1,Monday,9,Lima,Mixta,Shampoo,Aseo,5.02,Ninguno,Nublado
+T00482,S018,2024-01-29,1,Monday,19,Lima,Residencial,Agua,Bebidas,4.17,Combo,Soleado
+T00483,S010,2024-05-30,5,Thursday,19,Lima,Mixta,Papas fritas,Snacks,5.59,Ninguno,Soleado
+T00484,S043,2024-07-20,7,Saturday,16,Arequipa,Comercial,Jabón,Aseo,6.85,Ninguno,Soleado
+T00485,S001,2024-08-15,8,Thursday,21,Lima,Residencial,Alcohol medicinal,Farmacia,5.37,Ninguno,Soleado
+T00486,S017,2024-04-10,4,Wednesday,11,Trujillo,Comercial,Shampoo,Aseo,11.25,Descuento,Nublado
+T00487,S022,2024-08-19,8,Monday,9,Piura,Residencial,Paracetamol,Farmacia,8.1,Ninguno,Nublado
+T00488,S043,2024-02-22,2,Thursday,8,Arequipa,Mixta,Empanada,Comidas,6.51,Descuento,Lluvioso
+T00489,S037,2024-12-29,12,Sunday,7,Cusco,Mixta,Vino,Alcohol,12.87,2x1,Nublado
+T00490,S010,2024-09-30,9,Monday,19,Huancayo,Comercial,Sandwich,Comidas,12.25,Combo,Lluvioso
+T00491,S021,2024-06-19,6,Wednesday,20,Arequipa,Comercial,Shampoo,Aseo,5.64,Combo,Nublado
+T00492,S017,2024-05-25,5,Saturday,6,Arequipa,Residencial,Jugo,Bebidas,5.16,Ninguno,Nublado
+T00493,S015,2024-05-14,5,Tuesday,19,Cusco,Comercial,Energizante,Bebidas,2.54,Descuento,Lluvioso
+T00494,S028,2024-07-21,7,Sunday,6,Piura,Residencial,Empanada,Comidas,12.67,Ninguno,Nublado
+T00495,S037,2024-10-06,10,Sunday,13,Piura,Comercial,Jabón,Aseo,8.53,Ninguno,Lluvioso
+T00496,S005,2024-08-13,8,Tuesday,12,Cusco,Mixta,Paracetamol,Farmacia,6.45,Ninguno,Nublado
+T00497,S009,2024-11-18,11,Monday,17,Piura,Comercial,Cerveza,Alcohol,10.09,2x1,Lluvioso
+T00498,S028,2024-10-30,10,Wednesday,14,Trujillo,Comercial,Energizante,Bebidas,4.78,Ninguno,Soleado
+T00499,S044,2024-07-31,7,Wednesday,20,Huancayo,Residencial,Chocolate,Snacks,3.31,Descuento,Lluvioso
+T00500,S045,2024-08-08,8,Thursday,7,Lima,Mixta,Papas fritas,Snacks,4.88,2x1,Nublado
+T00501,S020,2024-06-03,6,Monday,6,Arequipa,Residencial,Alcohol medicinal,Farmacia,9.66,Ninguno,Soleado
+T00502,S027,2024-08-29,8,Thursday,8,Cusco,Comercial,Alcohol medicinal,Farmacia,6.1,Ninguno,Nublado
+T00503,S021,2024-12-13,12,Friday,13,Piura,Mixta,Cerveza,Alcohol,12.5,Ninguno,Lluvioso
+T00504,S049,2024-07-15,7,Monday,15,Huancayo,Mixta,Agua,Bebidas,4.56,2x1,Soleado
+T00505,S013,2024-06-25,6,Tuesday,16,Huancayo,Comercial,Cerveza,Alcohol,14.75,Ninguno,Nublado
+T00506,S039,2024-06-28,6,Friday,11,Arequipa,Mixta,Vino,Alcohol,24.99,Ninguno,Nublado
+T00507,S027,2024-12-27,12,Friday,21,Piura,Residencial,Gaseosa,Bebidas,3.25,Combo,Lluvioso
+T00508,S005,2024-05-22,5,Wednesday,13,Lima,Comercial,Cerveza,Alcohol,21.72,Ninguno,Nublado
+T00509,S027,2024-05-20,5,Monday,16,Lima,Mixta,Empanada,Comidas,7.66,Ninguno,Nublado
+T00510,S020,2024-10-15,10,Tuesday,19,Lima,Comercial,Vino,Alcohol,19.0,2x1,Lluvioso
+T00511,S032,2024-01-16,1,Tuesday,22,Arequipa,Comercial,Paracetamol,Farmacia,9.2,Ninguno,Nublado
+T00512,S026,2024-12-10,12,Tuesday,12,Piura,Mixta,Alcohol medicinal,Farmacia,8.49,Descuento,Lluvioso
+T00513,S008,2024-08-31,8,Saturday,16,Piura,Residencial,Cerveza,Alcohol,22.61,Descuento,Lluvioso
+T00514,S046,2024-10-02,10,Wednesday,19,Trujillo,Comercial,Chocolate,Snacks,3.76,2x1,Soleado
+T00515,S045,2024-11-07,11,Thursday,12,Huancayo,Residencial,Jabón,Aseo,7.89,Ninguno,Nublado
+T00516,S040,2024-04-17,4,Wednesday,22,Cusco,Mixta,Chocolate,Snacks,4.25,2x1,Lluvioso
+T00517,S001,2024-10-01,10,Tuesday,8,Piura,Residencial,Empanada,Comidas,6.64,Combo,Nublado
+T00518,S012,2024-02-18,2,Sunday,9,Trujillo,Residencial,Vino,Alcohol,7.52,Ninguno,Lluvioso
+T00519,S013,2024-02-04,2,Sunday,9,Cusco,Residencial,Jabón,Aseo,8.07,Ninguno,Soleado
+T00520,S038,2024-01-31,1,Wednesday,7,Lima,Mixta,Chocolate,Snacks,1.93,2x1,Soleado
+T00521,S004,2024-03-17,3,Sunday,10,Piura,Residencial,Paracetamol,Farmacia,8.0,Combo,Soleado
+T00522,S001,2024-07-04,7,Thursday,11,Lima,Residencial,Jabón,Aseo,9.95,Ninguno,Lluvioso
+T00523,S025,2024-11-28,11,Thursday,10,Cusco,Residencial,Cerveza,Alcohol,11.38,Descuento,Nublado
+T00524,S046,2024-01-02,1,Tuesday,10,Cusco,Comercial,Cerveza,Alcohol,14.59,2x1,Soleado
+T00525,S013,2024-05-23,5,Thursday,19,Cusco,Residencial,Vino,Alcohol,15.53,2x1,Soleado
+T00526,S029,2024-10-15,10,Tuesday,10,Piura,Residencial,Sandwich,Comidas,12.49,Ninguno,Lluvioso
+T00527,S027,2024-10-22,10,Tuesday,22,Trujillo,Residencial,Vino,Alcohol,23.09,Descuento,Soleado
+T00528,S035,2024-07-04,7,Thursday,18,Trujillo,Comercial,Gaseosa,Bebidas,3.2,2x1,Soleado
+T00529,S041,2024-04-15,4,Monday,6,Cusco,Comercial,Vino,Alcohol,21.54,Descuento,Lluvioso
+T00530,S038,2024-11-09,11,Saturday,14,Trujillo,Residencial,Galletas,Snacks,4.49,Descuento,Lluvioso
+T00531,S019,2024-10-29,10,Tuesday,12,Piura,Comercial,Cerveza,Alcohol,19.86,Ninguno,Nublado
+T00532,S024,2024-07-31,7,Wednesday,9,Cusco,Comercial,Vino,Alcohol,7.2,Descuento,Nublado
+T00533,S010,2024-07-23,7,Tuesday,7,Huancayo,Comercial,Agua,Bebidas,3.86,Descuento,Lluvioso
+T00534,S039,2024-07-05,7,Friday,15,Huancayo,Mixta,Galletas,Snacks,4.31,Ninguno,Nublado
+T00535,S042,2024-11-03,11,Sunday,14,Huancayo,Comercial,Paracetamol,Farmacia,4.53,Descuento,Soleado
+T00536,S022,2024-10-25,10,Friday,12,Lima,Comercial,Hamburguesa,Comidas,13.89,Ninguno,Soleado
+T00537,S024,2024-03-02,3,Saturday,13,Trujillo,Residencial,Gaseosa,Bebidas,2.07,Descuento,Nublado
+T00538,S005,2024-07-12,7,Friday,21,Lima,Comercial,Sandwich,Comidas,13.82,2x1,Soleado
+T00539,S041,2024-04-14,4,Sunday,14,Cusco,Residencial,Sandwich,Comidas,7.8,Ninguno,Nublado
+T00540,S010,2024-03-02,3,Saturday,19,Cusco,Residencial,Papas fritas,Snacks,4.02,Descuento,Nublado
+T00541,S010,2024-04-15,4,Monday,12,Piura,Residencial,Jabón,Aseo,8.51,2x1,Soleado
+T00542,S032,2024-06-30,6,Sunday,6,Trujillo,Residencial,Shampoo,Aseo,8.64,Ninguno,Lluvioso
+T00543,S036,2024-04-08,4,Monday,22,Lima,Comercial,Jabón,Aseo,8.07,Ninguno,Soleado
+T00544,S008,2024-02-23,2,Friday,8,Lima,Comercial,Vino,Alcohol,9.75,Combo,Nublado
+T00545,S034,2024-11-01,11,Friday,18,Trujillo,Comercial,Paracetamol,Farmacia,8.03,Ninguno,Lluvioso
+T00546,S006,2024-06-02,6,Sunday,14,Huancayo,Mixta,Chocolate,Snacks,5.28,Ninguno,Soleado
+T00547,S002,2024-11-14,11,Thursday,16,Huancayo,Residencial,Empanada,Comidas,7.34,Ninguno,Nublado
+T00548,S028,2024-05-23,5,Thursday,14,Cusco,Residencial,Sandwich,Comidas,7.85,Ninguno,Soleado
+T00549,S003,2024-04-14,4,Sunday,6,Lima,Comercial,Cerveza,Alcohol,8.84,Descuento,Lluvioso
+T00550,S003,2024-10-11,10,Friday,20,Huancayo,Comercial,Gaseosa,Bebidas,6.81,Ninguno,Nublado
+T00551,S008,2024-08-23,8,Friday,22,Cusco,Residencial,Paracetamol,Farmacia,4.21,Ninguno,Nublado
+T00552,S013,2024-01-04,1,Thursday,17,Huancayo,Mixta,Alcohol medicinal,Farmacia,7.54,Descuento,Lluvioso
+T00553,S009,2024-10-30,10,Wednesday,11,Piura,Residencial,Vino,Alcohol,13.27,Ninguno,Lluvioso
+T00554,S003,2024-08-12,8,Monday,19,Trujillo,Mixta,Agua,Bebidas,3.37,Descuento,Nublado
+T00555,S023,2024-05-04,5,Saturday,17,Cusco,Comercial,Sandwich,Comidas,9.0,Ninguno,Nublado
+T00556,S024,2024-07-24,7,Wednesday,6,Trujillo,Comercial,Vino,Alcohol,9.18,2x1,Nublado
+T00557,S015,2024-11-08,11,Friday,7,Huancayo,Residencial,Gaseosa,Bebidas,3.82,Ninguno,Soleado
+T00558,S005,2024-07-11,7,Thursday,8,Huancayo,Comercial,Alcohol medicinal,Farmacia,5.74,2x1,Soleado
+T00559,S009,2024-03-11,3,Monday,20,Arequipa,Mixta,Jabón,Aseo,8.03,Ninguno,Soleado
+T00560,S041,2024-01-13,1,Saturday,22,Huancayo,Residencial,Chocolate,Snacks,3.47,Descuento,Soleado
+T00561,S009,2024-01-10,1,Wednesday,9,Cusco,Comercial,Agua,Bebidas,3.59,Ninguno,Nublado
+T00562,S033,2024-05-05,5,Sunday,8,Cusco,Residencial,Paracetamol,Farmacia,3.84,Ninguno,Lluvioso
+T00563,S002,2024-01-14,1,Sunday,19,Lima,Comercial,Papas fritas,Snacks,3.18,Combo,Nublado
+T00564,S017,2024-10-09,10,Wednesday,15,Arequipa,Mixta,Energizante,Bebidas,2.45,Ninguno,Nublado
+T00565,S017,2024-04-12,4,Friday,20,Trujillo,Comercial,Cerveza,Alcohol,7.73,Ninguno,Lluvioso
+T00566,S020,2024-12-16,12,Monday,17,Piura,Mixta,Shampoo,Aseo,11.67,Descuento,Lluvioso
+T00567,S012,2024-11-30,11,Saturday,12,Piura,Residencial,Galletas,Snacks,2.06,Descuento,Lluvioso
+T00568,S022,2024-11-19,11,Tuesday,20,Lima,Mixta,Papas fritas,Snacks,3.46,2x1,Lluvioso
+T00569,S013,2024-02-26,2,Monday,16,Piura,Mixta,Galletas,Snacks,3.43,2x1,Nublado
+T00570,S019,2024-07-04,7,Thursday,8,Arequipa,Residencial,Shampoo,Aseo,7.54,2x1,Nublado
+T00571,S006,2024-08-12,8,Monday,7,Huancayo,Mixta,Hamburguesa,Comidas,9.11,Ninguno,Soleado
+T00572,S004,2024-03-18,3,Monday,18,Arequipa,Mixta,Sandwich,Comidas,11.53,Descuento,Lluvioso
+T00573,S018,2024-02-13,2,Tuesday,18,Trujillo,Mixta,Shampoo,Aseo,11.32,Ninguno,Lluvioso
+T00574,S014,2024-06-30,6,Sunday,6,Trujillo,Mixta,Empanada,Comidas,14.47,Ninguno,Soleado
+T00575,S038,2024-06-25,6,Tuesday,14,Arequipa,Comercial,Jabón,Aseo,6.14,Ninguno,Lluvioso
+T00576,S024,2024-06-17,6,Monday,9,Arequipa,Mixta,Jabón,Aseo,6.42,Ninguno,Lluvioso
+T00577,S014,2024-08-08,8,Thursday,14,Piura,Residencial,Alcohol medicinal,Farmacia,7.29,Ninguno,Soleado
+T00578,S001,2024-08-04,8,Sunday,20,Piura,Comercial,Vino,Alcohol,9.1,2x1,Soleado
+T00579,S022,2024-08-22,8,Thursday,19,Huancayo,Mixta,Chocolate,Snacks,5.62,2x1,Lluvioso
+T00580,S030,2024-02-25,2,Sunday,10,Arequipa,Comercial,Vino,Alcohol,6.45,Ninguno,Nublado
+T00581,S047,2024-02-29,2,Thursday,18,Lima,Residencial,Gaseosa,Bebidas,2.84,Ninguno,Soleado
+T00582,S017,2024-02-25,2,Sunday,6,Cusco,Residencial,Paracetamol,Farmacia,7.48,Ninguno,Soleado
+T00583,S016,2024-12-31,12,Tuesday,9,Trujillo,Residencial,Energizante,Bebidas,7.0,Ninguno,Nublado
+T00584,S010,2024-05-18,5,Saturday,11,Trujillo,Comercial,Alcohol medicinal,Farmacia,4.36,Ninguno,Soleado
+T00585,S011,2024-03-01,3,Friday,17,Huancayo,Mixta,Jugo,Bebidas,2.48,Combo,Soleado
+T00586,S004,2024-04-21,4,Sunday,9,Huancayo,Comercial,Agua,Bebidas,4.73,Ninguno,Lluvioso
+T00587,S037,2024-12-01,12,Sunday,21,Trujillo,Comercial,Energizante,Bebidas,7.67,2x1,Soleado
+T00588,S017,2024-11-17,11,Sunday,22,Huancayo,Residencial,Jabón,Aseo,7.38,2x1,Soleado
+T00589,S033,2024-07-13,7,Saturday,18,Arequipa,Mixta,Jugo,Bebidas,7.92,Ninguno,Nublado
+T00590,S031,2024-09-10,9,Tuesday,12,Trujillo,Comercial,Paracetamol,Farmacia,3.46,2x1,Soleado
+T00591,S018,2024-09-24,9,Tuesday,10,Arequipa,Mixta,Cerveza,Alcohol,12.76,Combo,Lluvioso
+T00592,S003,2024-06-19,6,Wednesday,8,Trujillo,Residencial,Vino,Alcohol,14.91,Descuento,Lluvioso
+T00593,S036,2024-03-14,3,Thursday,20,Piura,Mixta,Papas fritas,Snacks,5.09,Ninguno,Soleado
+T00594,S035,2024-07-07,7,Sunday,9,Lima,Comercial,Chocolate,Snacks,4.8,Combo,Lluvioso
+T00595,S033,2024-10-20,10,Sunday,16,Lima,Residencial,Cerveza,Alcohol,17.61,Ninguno,Soleado
+T00596,S010,2024-11-28,11,Thursday,11,Lima,Mixta,Hamburguesa,Comidas,13.71,2x1,Soleado
+T00597,S003,2024-03-14,3,Thursday,14,Trujillo,Mixta,Hamburguesa,Comidas,9.04,Ninguno,Soleado
+T00598,S004,2024-03-01,3,Friday,12,Huancayo,Residencial,Jabón,Aseo,11.62,2x1,Nublado
+T00599,S026,2024-04-30,4,Tuesday,10,Huancayo,Comercial,Galletas,Snacks,4.03,2x1,Lluvioso
+T00600,S024,2024-03-27,3,Wednesday,15,Cusco,Residencial,Papas fritas,Snacks,4.29,Ninguno,Lluvioso
+T00601,S025,2024-05-20,5,Monday,7,Trujillo,Mixta,Jugo,Bebidas,7.04,Ninguno,Soleado
+T00602,S036,2024-09-14,9,Saturday,19,Cusco,Comercial,Gaseosa,Bebidas,6.68,Combo,Soleado
+T00603,S012,2024-09-20,9,Friday,22,Trujillo,Residencial,Agua,Bebidas,5.44,2x1,Nublado
+T00604,S033,2024-01-11,1,Thursday,13,Lima,Comercial,Vino,Alcohol,10.25,Ninguno,Nublado
+T00605,S016,2024-10-01,10,Tuesday,14,Lima,Residencial,Sandwich,Comidas,10.22,Ninguno,Soleado
+T00606,S047,2024-09-30,9,Monday,22,Piura,Residencial,Hamburguesa,Comidas,8.05,Ninguno,Lluvioso
+T00607,S027,2024-05-25,5,Saturday,12,Huancayo,Residencial,Paracetamol,Farmacia,9.48,Ninguno,Soleado
+T00608,S017,2024-12-10,12,Tuesday,18,Trujillo,Residencial,Empanada,Comidas,9.4,Ninguno,Nublado
+T00609,S034,2024-02-25,2,Sunday,7,Huancayo,Mixta,Shampoo,Aseo,7.6,Descuento,Lluvioso
+T00610,S001,2024-07-01,7,Monday,10,Trujillo,Comercial,Jugo,Bebidas,3.92,Ninguno,Soleado
+T00611,S021,2024-09-24,9,Tuesday,9,Trujillo,Residencial,Jabón,Aseo,9.37,2x1,Lluvioso
+T00612,S013,2024-11-17,11,Sunday,15,Trujillo,Mixta,Jabón,Aseo,9.99,Ninguno,Lluvioso
+T00613,S010,2024-09-13,9,Friday,13,Arequipa,Mixta,Cerveza,Alcohol,11.92,2x1,Lluvioso
+T00614,S014,2024-08-07,8,Wednesday,8,Cusco,Mixta,Agua,Bebidas,6.14,Ninguno,Soleado
+T00615,S037,2024-04-13,4,Saturday,9,Cusco,Mixta,Alcohol medicinal,Farmacia,3.51,Ninguno,Lluvioso
+T00616,S011,2024-10-05,10,Saturday,11,Piura,Comercial,Jabón,Aseo,11.43,Combo,Nublado
+T00617,S024,2024-07-27,7,Saturday,16,Cusco,Comercial,Cerveza,Alcohol,15.81,Ninguno,Nublado
+T00618,S028,2024-04-21,4,Sunday,17,Trujillo,Comercial,Hamburguesa,Comidas,14.21,2x1,Soleado
+T00619,S007,2024-10-20,10,Sunday,6,Piura,Residencial,Alcohol medicinal,Farmacia,7.99,Combo,Nublado
+T00620,S002,2024-01-17,1,Wednesday,18,Huancayo,Comercial,Shampoo,Aseo,11.18,Ninguno,Soleado
+T00621,S033,2024-07-16,7,Tuesday,13,Cusco,Residencial,Vino,Alcohol,6.46,Ninguno,Lluvioso
+T00622,S042,2024-09-16,9,Monday,15,Arequipa,Mixta,Cerveza,Alcohol,11.12,Ninguno,Nublado
+T00623,S025,2024-11-28,11,Thursday,20,Cusco,Residencial,Jabón,Aseo,8.92,Descuento,Nublado
+T00624,S012,2024-02-25,2,Sunday,10,Arequipa,Comercial,Jugo,Bebidas,5.79,Combo,Lluvioso
+T00625,S017,2024-02-04,2,Sunday,16,Trujillo,Residencial,Cerveza,Alcohol,18.58,Ninguno,Nublado
+T00626,S041,2024-07-24,7,Wednesday,14,Huancayo,Mixta,Papas fritas,Snacks,5.21,Ninguno,Nublado
+T00627,S044,2024-10-24,10,Thursday,14,Cusco,Mixta,Sandwich,Comidas,6.97,Ninguno,Lluvioso
+T00628,S046,2024-07-03,7,Wednesday,11,Cusco,Comercial,Galletas,Snacks,5.2,Combo,Soleado
+T00629,S015,2024-08-08,8,Thursday,21,Cusco,Comercial,Cerveza,Alcohol,16.72,Ninguno,Nublado
+T00630,S035,2024-04-16,4,Tuesday,20,Trujillo,Comercial,Agua,Bebidas,4.65,Ninguno,Lluvioso
+T00631,S007,2024-04-06,4,Saturday,18,Cusco,Residencial,Sandwich,Comidas,13.06,Ninguno,Soleado
+T00632,S036,2024-01-01,1,Monday,22,Lima,Residencial,Chocolate,Snacks,4.24,Ninguno,Soleado
+T00633,S013,2024-03-07,3,Thursday,6,Piura,Mixta,Jabón,Aseo,7.56,Ninguno,Nublado
+T00634,S019,2024-01-29,1,Monday,11,Piura,Comercial,Agua,Bebidas,7.43,Ninguno,Soleado
+T00635,S004,2024-06-02,6,Sunday,20,Huancayo,Mixta,Paracetamol,Farmacia,3.9,Combo,Lluvioso
+T00636,S007,2024-05-07,5,Tuesday,17,Trujillo,Mixta,Shampoo,Aseo,4.15,Ninguno,Nublado
+T00637,S029,2024-02-18,2,Sunday,14,Trujillo,Residencial,Papas fritas,Snacks,4.77,Descuento,Lluvioso
+T00638,S020,2024-06-11,6,Tuesday,13,Trujillo,Mixta,Gaseosa,Bebidas,3.89,Ninguno,Lluvioso
+T00639,S004,2024-06-01,6,Saturday,15,Arequipa,Residencial,Gaseosa,Bebidas,4.18,Ninguno,Lluvioso
+T00640,S010,2024-08-28,8,Wednesday,18,Cusco,Mixta,Vino,Alcohol,9.92,Ninguno,Nublado
+T00641,S025,2024-01-29,1,Monday,14,Cusco,Mixta,Alcohol medicinal,Farmacia,8.56,Descuento,Soleado
+T00642,S047,2024-01-21,1,Sunday,19,Arequipa,Comercial,Alcohol medicinal,Farmacia,3.71,2x1,Lluvioso
+T00643,S025,2024-04-04,4,Thursday,8,Lima,Mixta,Paracetamol,Farmacia,4.64,Ninguno,Soleado
+T00644,S033,2024-03-26,3,Tuesday,12,Cusco,Comercial,Sandwich,Comidas,13.2,Combo,Soleado
+T00645,S009,2024-10-08,10,Tuesday,7,Trujillo,Mixta,Gaseosa,Bebidas,5.2,2x1,Lluvioso
+T00646,S010,2024-10-18,10,Friday,21,Arequipa,Residencial,Alcohol medicinal,Farmacia,9.34,Ninguno,Nublado
+T00647,S014,2024-05-04,5,Saturday,6,Cusco,Mixta,Galletas,Snacks,5.01,Descuento,Soleado
+T00648,S011,2024-01-16,1,Tuesday,16,Piura,Residencial,Alcohol medicinal,Farmacia,7.4,Ninguno,Nublado
+T00649,S022,2024-02-08,2,Thursday,14,Cusco,Residencial,Paracetamol,Farmacia,5.62,Ninguno,Soleado
+T00650,S047,2024-05-12,5,Sunday,9,Trujillo,Residencial,Shampoo,Aseo,9.67,Ninguno,Nublado
+T00651,S047,2024-03-29,3,Friday,9,Arequipa,Mixta,Cerveza,Alcohol,8.41,Descuento,Nublado
+T00652,S001,2024-08-09,8,Friday,12,Huancayo,Mixta,Hamburguesa,Comidas,6.99,Ninguno,Lluvioso
+T00653,S017,2024-01-08,1,Monday,6,Arequipa,Mixta,Shampoo,Aseo,11.93,Ninguno,Lluvioso
+T00654,S032,2024-09-09,9,Monday,15,Cusco,Comercial,Gaseosa,Bebidas,3.38,Ninguno,Nublado
+T00655,S016,2024-02-04,2,Sunday,6,Piura,Residencial,Shampoo,Aseo,10.49,2x1,Nublado
+T00656,S035,2024-06-13,6,Thursday,17,Lima,Comercial,Hamburguesa,Comidas,6.93,Combo,Soleado
+T00657,S005,2024-01-25,1,Thursday,15,Arequipa,Mixta,Paracetamol,Farmacia,4.77,2x1,Lluvioso
+T00658,S028,2024-03-26,3,Tuesday,8,Lima,Comercial,Galletas,Snacks,2.8,Ninguno,Nublado
+T00659,S039,2024-08-09,8,Friday,9,Lima,Comercial,Energizante,Bebidas,2.51,Ninguno,Soleado
+T00660,S009,2024-12-22,12,Sunday,21,Lima,Mixta,Vino,Alcohol,20.1,Descuento,Lluvioso
+T00661,S021,2024-08-24,8,Saturday,6,Piura,Residencial,Jugo,Bebidas,6.86,Descuento,Lluvioso
+T00662,S022,2024-01-20,1,Saturday,9,Cusco,Residencial,Jabón,Aseo,10.31,Descuento,Nublado
+T00663,S003,2024-02-16,2,Friday,10,Cusco,Residencial,Vino,Alcohol,24.73,Ninguno,Lluvioso
+T00664,S024,2024-05-01,5,Wednesday,8,Lima,Mixta,Chocolate,Snacks,2.71,Ninguno,Lluvioso
+T00665,S026,2024-12-21,12,Saturday,13,Huancayo,Comercial,Paracetamol,Farmacia,7.26,Descuento,Soleado
+T00666,S043,2024-04-16,4,Tuesday,21,Cusco,Residencial,Empanada,Comidas,5.33,Ninguno,Soleado
+T00667,S016,2024-04-25,4,Thursday,14,Piura,Residencial,Vino,Alcohol,24.99,Ninguno,Lluvioso
+T00668,S035,2024-05-13,5,Monday,10,Trujillo,Comercial,Vino,Alcohol,14.3,Combo,Soleado
+T00669,S044,2024-08-29,8,Thursday,7,Piura,Mixta,Empanada,Comidas,11.63,Ninguno,Lluvioso
+T00670,S048,2024-04-01,4,Monday,18,Lima,Mixta,Paracetamol,Farmacia,4.93,Descuento,Lluvioso
+T00671,S001,2024-07-09,7,Tuesday,10,Trujillo,Comercial,Chocolate,Snacks,5.16,2x1,Nublado
+T00672,S036,2024-07-14,7,Sunday,17,Arequipa,Mixta,Hamburguesa,Comidas,10.72,Ninguno,Lluvioso
+T00673,S027,2024-06-16,6,Sunday,10,Trujillo,Residencial,Jabón,Aseo,7.6,Descuento,Soleado
+T00674,S018,2024-07-30,7,Tuesday,20,Huancayo,Mixta,Jabón,Aseo,6.48,2x1,Soleado
+T00675,S049,2024-05-14,5,Tuesday,20,Lima,Mixta,Empanada,Comidas,14.57,Combo,Lluvioso
+T00676,S040,2024-06-30,6,Sunday,19,Arequipa,Residencial,Paracetamol,Farmacia,3.37,Ninguno,Lluvioso
+T00677,S012,2024-04-02,4,Tuesday,6,Piura,Residencial,Shampoo,Aseo,10.11,Ninguno,Soleado
+T00678,S016,2024-06-12,6,Wednesday,13,Lima,Residencial,Shampoo,Aseo,7.4,Ninguno,Nublado
+T00679,S021,2024-09-02,9,Monday,11,Trujillo,Residencial,Shampoo,Aseo,4.39,Combo,Soleado
+T00680,S021,2024-12-03,12,Tuesday,8,Cusco,Mixta,Jabón,Aseo,9.58,Ninguno,Nublado
+T00681,S033,2024-05-28,5,Tuesday,13,Lima,Mixta,Jabón,Aseo,11.65,2x1,Soleado
+T00682,S021,2024-07-15,7,Monday,11,Huancayo,Mixta,Vino,Alcohol,23.38,Descuento,Lluvioso
+T00683,S007,2024-09-27,9,Friday,19,Piura,Mixta,Chocolate,Snacks,1.85,Ninguno,Lluvioso
+T00684,S044,2024-09-16,9,Monday,10,Trujillo,Mixta,Energizante,Bebidas,3.05,Ninguno,Nublado
+T00685,S024,2024-07-30,7,Tuesday,8,Lima,Mixta,Agua,Bebidas,6.66,Ninguno,Lluvioso
+T00686,S008,2024-06-07,6,Friday,18,Arequipa,Residencial,Empanada,Comidas,5.01,2x1,Soleado
+T00687,S026,2024-08-04,8,Sunday,20,Arequipa,Residencial,Gaseosa,Bebidas,3.98,Descuento,Lluvioso
+T00688,S008,2024-01-27,1,Saturday,20,Huancayo,Residencial,Jabón,Aseo,6.76,Descuento,Soleado
+T00689,S024,2024-10-01,10,Tuesday,20,Piura,Comercial,Jabón,Aseo,8.85,2x1,Soleado
+T00690,S044,2024-11-28,11,Thursday,10,Cusco,Residencial,Agua,Bebidas,7.56,Ninguno,Soleado
+T00691,S008,2024-03-18,3,Monday,7,Piura,Residencial,Shampoo,Aseo,4.07,2x1,Lluvioso
+T00692,S028,2024-01-10,1,Wednesday,8,Huancayo,Residencial,Galletas,Snacks,3.49,Ninguno,Nublado
+T00693,S033,2024-12-02,12,Monday,10,Cusco,Residencial,Jabón,Aseo,6.48,Ninguno,Lluvioso
+T00694,S038,2024-10-26,10,Saturday,15,Lima,Comercial,Hamburguesa,Comidas,9.71,Ninguno,Nublado
+T00695,S008,2024-08-01,8,Thursday,17,Trujillo,Residencial,Empanada,Comidas,7.89,2x1,Lluvioso
+T00696,S024,2024-02-02,2,Friday,17,Trujillo,Residencial,Energizante,Bebidas,6.2,Ninguno,Soleado
+T00697,S002,2024-05-31,5,Friday,16,Trujillo,Mixta,Papas fritas,Snacks,1.45,Combo,Nublado
+T00698,S036,2024-03-01,3,Friday,17,Lima,Mixta,Jabón,Aseo,11.66,Combo,Lluvioso
+T00699,S031,2024-04-11,4,Thursday,21,Huancayo,Residencial,Alcohol medicinal,Farmacia,9.35,Ninguno,Nublado
+T00700,S008,2024-02-28,2,Wednesday,17,Huancayo,Residencial,Papas fritas,Snacks,1.72,Ninguno,Nublado
+T00701,S020,2024-10-05,10,Saturday,15,Arequipa,Mixta,Jabón,Aseo,6.59,2x1,Soleado
+T00702,S040,2024-04-20,4,Saturday,6,Piura,Residencial,Jabón,Aseo,7.32,Ninguno,Nublado
+T00703,S024,2024-02-03,2,Saturday,21,Trujillo,Mixta,Hamburguesa,Comidas,12.59,Ninguno,Soleado
+T00704,S045,2024-08-01,8,Thursday,11,Huancayo,Comercial,Chocolate,Snacks,2.31,Ninguno,Soleado
+T00705,S018,2024-04-12,4,Friday,18,Trujillo,Comercial,Jabón,Aseo,9.86,Ninguno,Soleado
+T00706,S030,2024-09-10,9,Tuesday,15,Trujillo,Residencial,Paracetamol,Farmacia,3.73,Ninguno,Soleado
+T00707,S047,2024-09-07,9,Saturday,13,Huancayo,Comercial,Vino,Alcohol,12.65,Descuento,Soleado
+T00708,S015,2024-04-23,4,Tuesday,10,Arequipa,Comercial,Empanada,Comidas,13.17,Ninguno,Nublado
+T00709,S014,2024-01-16,1,Tuesday,17,Piura,Comercial,Alcohol medicinal,Farmacia,5.25,Ninguno,Nublado
+T00710,S002,2024-06-09,6,Sunday,17,Lima,Comercial,Shampoo,Aseo,8.43,Descuento,Nublado
+T00711,S025,2024-11-06,11,Wednesday,13,Huancayo,Comercial,Galletas,Snacks,4.02,Ninguno,Soleado
+T00712,S040,2024-09-28,9,Saturday,11,Arequipa,Residencial,Chocolate,Snacks,5.9,2x1,Soleado
+T00713,S028,2024-09-20,9,Friday,13,Lima,Comercial,Cerveza,Alcohol,22.41,Combo,Soleado
+T00714,S031,2024-03-24,3,Sunday,6,Huancayo,Residencial,Chocolate,Snacks,4.22,Descuento,Soleado
+T00715,S030,2024-07-19,7,Friday,16,Piura,Residencial,Agua,Bebidas,5.19,2x1,Soleado
+T00716,S014,2024-12-14,12,Saturday,6,Lima,Comercial,Jabón,Aseo,4.09,Ninguno,Soleado
+T00717,S032,2024-06-20,6,Thursday,22,Arequipa,Residencial,Jabón,Aseo,6.99,2x1,Lluvioso
+T00718,S017,2024-03-19,3,Tuesday,17,Trujillo,Residencial,Jugo,Bebidas,5.19,2x1,Soleado
+T00719,S020,2024-02-26,2,Monday,6,Lima,Residencial,Paracetamol,Farmacia,6.39,Descuento,Nublado
+T00720,S016,2024-02-11,2,Sunday,7,Cusco,Comercial,Paracetamol,Farmacia,8.04,Ninguno,Lluvioso
+T00721,S030,2024-09-02,9,Monday,22,Huancayo,Residencial,Vino,Alcohol,14.67,Combo,Nublado
+T00722,S015,2024-12-21,12,Saturday,7,Piura,Mixta,Hamburguesa,Comidas,14.42,Descuento,Lluvioso
+T00723,S007,2024-02-22,2,Thursday,21,Huancayo,Comercial,Paracetamol,Farmacia,5.59,Combo,Lluvioso
+T00724,S005,2024-10-16,10,Wednesday,21,Cusco,Mixta,Agua,Bebidas,4.82,Descuento,Nublado
+T00725,S016,2024-12-17,12,Tuesday,15,Trujillo,Residencial,Vino,Alcohol,9.0,Combo,Lluvioso
+T00726,S044,2024-01-02,1,Tuesday,22,Trujillo,Residencial,Paracetamol,Farmacia,6.94,Ninguno,Lluvioso
+T00727,S017,2024-05-15,5,Wednesday,17,Piura,Residencial,Alcohol medicinal,Farmacia,9.57,2x1,Soleado
+T00728,S042,2024-01-17,1,Wednesday,9,Trujillo,Mixta,Alcohol medicinal,Farmacia,6.74,Ninguno,Soleado
+T00729,S033,2024-03-09,3,Saturday,15,Piura,Residencial,Paracetamol,Farmacia,3.94,Ninguno,Nublado
+T00730,S035,2024-03-08,3,Friday,18,Cusco,Mixta,Shampoo,Aseo,10.15,Ninguno,Soleado
+T00731,S015,2024-04-02,4,Tuesday,15,Lima,Mixta,Sandwich,Comidas,12.71,Ninguno,Lluvioso
+T00732,S001,2024-11-02,11,Saturday,21,Trujillo,Mixta,Agua,Bebidas,3.09,Ninguno,Nublado
+T00733,S015,2024-03-29,3,Friday,20,Cusco,Mixta,Vino,Alcohol,8.91,Descuento,Nublado
+T00734,S035,2024-10-18,10,Friday,19,Huancayo,Mixta,Agua,Bebidas,6.12,Ninguno,Lluvioso
+T00735,S043,2024-10-14,10,Monday,16,Huancayo,Mixta,Hamburguesa,Comidas,8.93,Descuento,Soleado
+T00736,S032,2024-09-24,9,Tuesday,16,Huancayo,Mixta,Agua,Bebidas,6.54,Ninguno,Lluvioso
+T00737,S023,2024-06-03,6,Monday,17,Piura,Residencial,Paracetamol,Farmacia,8.83,2x1,Soleado
+T00738,S017,2024-04-20,4,Saturday,20,Huancayo,Mixta,Galletas,Snacks,2.27,Ninguno,Soleado
+T00739,S017,2024-05-07,5,Tuesday,16,Trujillo,Residencial,Galletas,Snacks,2.12,Ninguno,Soleado
+T00740,S036,2024-04-20,4,Saturday,9,Huancayo,Residencial,Vino,Alcohol,17.61,Descuento,Nublado
+T00741,S033,2024-04-23,4,Tuesday,18,Trujillo,Comercial,Papas fritas,Snacks,4.15,2x1,Lluvioso
+T00742,S024,2024-06-07,6,Friday,13,Trujillo,Comercial,Galletas,Snacks,2.34,Descuento,Soleado
+T00743,S007,2024-06-29,6,Saturday,16,Lima,Mixta,Jabón,Aseo,11.54,Ninguno,Lluvioso
+T00744,S029,2024-11-01,11,Friday,19,Huancayo,Mixta,Jugo,Bebidas,4.21,2x1,Soleado
+T00745,S026,2024-03-29,3,Friday,14,Arequipa,Comercial,Empanada,Comidas,9.07,Descuento,Soleado
+T00746,S047,2024-06-04,6,Tuesday,14,Cusco,Mixta,Vino,Alcohol,19.48,Descuento,Soleado
+T00747,S018,2024-03-06,3,Wednesday,19,Trujillo,Comercial,Vino,Alcohol,10.69,2x1,Nublado
+T00748,S021,2024-08-24,8,Saturday,9,Lima,Mixta,Sandwich,Comidas,13.79,2x1,Soleado
+T00749,S017,2024-06-29,6,Saturday,10,Lima,Mixta,Paracetamol,Farmacia,8.89,Ninguno,Lluvioso
+T00750,S048,2024-05-17,5,Friday,22,Huancayo,Comercial,Paracetamol,Farmacia,5.14,2x1,Soleado
+T00751,S021,2024-09-25,9,Wednesday,8,Piura,Comercial,Alcohol medicinal,Farmacia,9.99,2x1,Soleado
+T00752,S048,2024-06-04,6,Tuesday,21,Piura,Comercial,Shampoo,Aseo,9.8,Combo,Lluvioso
+T00753,S040,2024-04-21,4,Sunday,19,Huancayo,Comercial,Alcohol medicinal,Farmacia,6.14,Ninguno,Soleado
+T00754,S026,2024-08-01,8,Thursday,21,Arequipa,Residencial,Vino,Alcohol,18.57,Ninguno,Soleado
+T00755,S043,2024-05-11,5,Saturday,22,Lima,Comercial,Sandwich,Comidas,12.25,Combo,Soleado
+T00756,S046,2024-07-26,7,Friday,10,Arequipa,Residencial,Gaseosa,Bebidas,6.03,Ninguno,Lluvioso
+T00757,S021,2024-07-17,7,Wednesday,21,Trujillo,Mixta,Vino,Alcohol,15.41,Descuento,Soleado
+T00758,S031,2024-06-16,6,Sunday,10,Arequipa,Comercial,Alcohol medicinal,Farmacia,4.12,Combo,Soleado
+T00759,S027,2024-06-19,6,Wednesday,18,Piura,Mixta,Agua,Bebidas,5.85,Ninguno,Nublado
+T00760,S014,2024-02-22,2,Thursday,18,Cusco,Comercial,Jabón,Aseo,4.17,Combo,Lluvioso
+T00761,S047,2024-09-11,9,Wednesday,14,Arequipa,Residencial,Empanada,Comidas,6.46,Ninguno,Nublado
+T00762,S008,2024-03-05,3,Tuesday,8,Arequipa,Comercial,Galletas,Snacks,1.53,Combo,Soleado
+T00763,S001,2024-06-07,6,Friday,17,Trujillo,Comercial,Paracetamol,Farmacia,4.09,Ninguno,Soleado
+T00764,S018,2024-06-20,6,Thursday,21,Huancayo,Comercial,Galletas,Snacks,2.11,Ninguno,Nublado
+T00765,S013,2024-11-09,11,Saturday,9,Huancayo,Residencial,Galletas,Snacks,2.31,Ninguno,Nublado
+T00766,S045,2024-03-16,3,Saturday,14,Cusco,Mixta,Shampoo,Aseo,5.22,Ninguno,Soleado
+T00767,S013,2024-12-09,12,Monday,16,Arequipa,Residencial,Papas fritas,Snacks,4.61,Descuento,Nublado
+T00768,S042,2024-06-11,6,Tuesday,19,Huancayo,Residencial,Sandwich,Comidas,14.13,Combo,Soleado
+T00769,S012,2024-06-26,6,Wednesday,8,Lima,Comercial,Chocolate,Snacks,5.16,Ninguno,Soleado
+T00770,S049,2024-06-24,6,Monday,15,Trujillo,Comercial,Papas fritas,Snacks,2.35,Ninguno,Nublado
+T00771,S047,2024-07-24,7,Wednesday,15,Trujillo,Mixta,Energizante,Bebidas,4.73,Ninguno,Lluvioso
+T00772,S026,2024-04-17,4,Wednesday,12,Cusco,Comercial,Jabón,Aseo,6.38,Ninguno,Nublado
+T00773,S007,2024-08-28,8,Wednesday,8,Huancayo,Mixta,Jabón,Aseo,7.21,Descuento,Soleado
+T00774,S013,2024-04-25,4,Thursday,16,Arequipa,Residencial,Alcohol medicinal,Farmacia,5.95,Combo,Soleado
+T00775,S024,2024-06-26,6,Wednesday,10,Huancayo,Residencial,Empanada,Comidas,10.19,Ninguno,Lluvioso
+T00776,S008,2024-11-08,11,Friday,11,Cusco,Mixta,Empanada,Comidas,12.27,Ninguno,Nublado
+T00777,S002,2024-02-07,2,Wednesday,9,Cusco,Mixta,Agua,Bebidas,4.09,Ninguno,Nublado
+T00778,S015,2024-08-14,8,Wednesday,17,Arequipa,Comercial,Cerveza,Alcohol,6.04,Ninguno,Soleado
+T00779,S018,2024-11-17,11,Sunday,16,Arequipa,Mixta,Paracetamol,Farmacia,6.73,Combo,Lluvioso
+T00780,S027,2024-10-22,10,Tuesday,19,Cusco,Residencial,Cerveza,Alcohol,16.3,Ninguno,Soleado
+T00781,S035,2024-10-14,10,Monday,6,Lima,Residencial,Energizante,Bebidas,2.23,2x1,Nublado
+T00782,S036,2024-06-12,6,Wednesday,6,Huancayo,Residencial,Alcohol medicinal,Farmacia,3.11,Ninguno,Nublado
+T00783,S016,2024-05-21,5,Tuesday,13,Arequipa,Comercial,Jabón,Aseo,10.01,Descuento,Soleado
+T00784,S032,2024-06-05,6,Wednesday,17,Lima,Residencial,Chocolate,Snacks,5.58,Descuento,Soleado
+T00785,S026,2024-12-01,12,Sunday,20,Piura,Comercial,Vino,Alcohol,6.13,Descuento,Soleado
+T00786,S039,2024-09-01,9,Sunday,17,Huancayo,Mixta,Paracetamol,Farmacia,8.64,Ninguno,Lluvioso
+T00787,S011,2024-02-06,2,Tuesday,19,Trujillo,Mixta,Jabón,Aseo,4.71,Ninguno,Nublado
+T00788,S048,2024-10-15,10,Tuesday,7,Huancayo,Residencial,Galletas,Snacks,4.57,Ninguno,Soleado
+T00789,S012,2024-03-01,3,Friday,17,Huancayo,Comercial,Hamburguesa,Comidas,13.31,Descuento,Soleado
+T00790,S034,2024-09-01,9,Sunday,11,Arequipa,Comercial,Gaseosa,Bebidas,2.18,2x1,Nublado
+T00791,S031,2024-03-18,3,Monday,17,Lima,Mixta,Papas fritas,Snacks,3.66,Descuento,Soleado
+T00792,S029,2024-04-17,4,Wednesday,6,Lima,Mixta,Chocolate,Snacks,3.36,Combo,Lluvioso
+T00793,S020,2024-10-14,10,Monday,18,Cusco,Mixta,Shampoo,Aseo,6.01,Ninguno,Nublado
+T00794,S039,2024-03-15,3,Friday,15,Trujillo,Mixta,Jabón,Aseo,6.9,Ninguno,Soleado
+T00795,S023,2024-11-12,11,Tuesday,19,Trujillo,Comercial,Hamburguesa,Comidas,13.43,Combo,Nublado
+T00796,S035,2024-01-19,1,Friday,9,Cusco,Mixta,Vino,Alcohol,18.83,Combo,Lluvioso
+T00797,S037,2024-12-15,12,Sunday,22,Piura,Mixta,Shampoo,Aseo,9.5,Ninguno,Soleado
+T00798,S038,2024-01-14,1,Sunday,19,Lima,Comercial,Jugo,Bebidas,7.32,Descuento,Soleado
+T00799,S049,2024-09-01,9,Sunday,19,Huancayo,Comercial,Chocolate,Snacks,1.76,Ninguno,Lluvioso
+T00800,S031,2024-11-15,11,Friday,7,Trujillo,Residencial,Chocolate,Snacks,5.33,Descuento,Soleado
+T00801,S034,2024-11-23,11,Saturday,16,Arequipa,Comercial,Jabón,Aseo,7.28,Ninguno,Lluvioso
+T00802,S013,2024-04-18,4,Thursday,21,Huancayo,Comercial,Sandwich,Comidas,7.3,2x1,Nublado
+T00803,S047,2024-01-20,1,Saturday,7,Arequipa,Mixta,Sandwich,Comidas,6.29,Descuento,Nublado
+T00804,S040,2024-08-12,8,Monday,7,Piura,Residencial,Cerveza,Alcohol,13.92,Descuento,Lluvioso
+T00805,S023,2024-02-08,2,Thursday,17,Lima,Mixta,Alcohol medicinal,Farmacia,6.42,Ninguno,Nublado
+T00806,S049,2024-11-08,11,Friday,20,Cusco,Mixta,Jugo,Bebidas,4.77,Ninguno,Soleado
+T00807,S041,2024-01-18,1,Thursday,11,Arequipa,Residencial,Cerveza,Alcohol,8.76,Combo,Lluvioso
+T00808,S005,2024-01-28,1,Sunday,12,Piura,Residencial,Cerveza,Alcohol,16.52,Ninguno,Soleado
+T00809,S028,2024-06-20,6,Thursday,18,Trujillo,Comercial,Vino,Alcohol,15.07,2x1,Soleado
+T00810,S001,2024-09-08,9,Sunday,21,Arequipa,Residencial,Agua,Bebidas,5.7,Ninguno,Soleado
+T00811,S040,2024-11-17,11,Sunday,13,Huancayo,Residencial,Chocolate,Snacks,1.92,Ninguno,Soleado
+T00812,S036,2024-04-24,4,Wednesday,21,Piura,Residencial,Alcohol medicinal,Farmacia,5.11,Ninguno,Lluvioso
+T00813,S005,2024-08-29,8,Thursday,13,Cusco,Residencial,Sandwich,Comidas,10.21,Combo,Lluvioso
+T00814,S037,2024-08-31,8,Saturday,14,Arequipa,Mixta,Jabón,Aseo,10.27,2x1,Soleado
+T00815,S044,2024-12-05,12,Thursday,6,Trujillo,Comercial,Chocolate,Snacks,1.09,Ninguno,Soleado
+T00816,S031,2024-10-02,10,Wednesday,10,Arequipa,Mixta,Empanada,Comidas,9.19,Descuento,Soleado
+T00817,S042,2024-10-26,10,Saturday,16,Cusco,Mixta,Paracetamol,Farmacia,3.28,Combo,Nublado
+T00818,S035,2024-12-19,12,Thursday,14,Piura,Mixta,Alcohol medicinal,Farmacia,8.76,Ninguno,Lluvioso
+T00819,S042,2024-08-23,8,Friday,10,Lima,Comercial,Galletas,Snacks,5.9,Descuento,Lluvioso
+T00820,S031,2024-01-01,1,Monday,21,Piura,Comercial,Gaseosa,Bebidas,7.95,Descuento,Soleado
+T00821,S003,2024-05-13,5,Monday,16,Trujillo,Mixta,Vino,Alcohol,10.77,Ninguno,Lluvioso
+T00822,S049,2024-10-12,10,Saturday,11,Piura,Comercial,Shampoo,Aseo,6.25,Ninguno,Lluvioso
+T00823,S026,2024-11-04,11,Monday,13,Arequipa,Comercial,Cerveza,Alcohol,14.03,Descuento,Lluvioso
+T00824,S012,2024-12-11,12,Wednesday,6,Lima,Mixta,Cerveza,Alcohol,8.79,Ninguno,Nublado
+T00825,S020,2024-03-24,3,Sunday,11,Piura,Comercial,Gaseosa,Bebidas,4.61,Ninguno,Soleado
+T00826,S038,2024-06-16,6,Sunday,8,Trujillo,Comercial,Alcohol medicinal,Farmacia,3.01,Descuento,Nublado
+T00827,S004,2024-01-28,1,Sunday,19,Cusco,Comercial,Cerveza,Alcohol,17.24,Ninguno,Soleado
+T00828,S005,2024-06-02,6,Sunday,17,Piura,Residencial,Hamburguesa,Comidas,13.25,Ninguno,Soleado
+T00829,S044,2024-08-18,8,Sunday,14,Trujillo,Comercial,Shampoo,Aseo,7.93,Combo,Nublado
+T00830,S024,2024-07-03,7,Wednesday,22,Piura,Mixta,Chocolate,Snacks,1.77,2x1,Lluvioso
+T00831,S029,2024-08-15,8,Thursday,9,Trujillo,Comercial,Vino,Alcohol,20.17,Ninguno,Lluvioso
+T00832,S036,2024-07-05,7,Friday,16,Piura,Residencial,Vino,Alcohol,19.94,Descuento,Soleado
+T00833,S023,2024-07-07,7,Sunday,21,Piura,Comercial,Hamburguesa,Comidas,11.77,Combo,Nublado
+T00834,S008,2024-04-18,4,Thursday,12,Lima,Comercial,Alcohol medicinal,Farmacia,3.14,Ninguno,Soleado
+T00835,S026,2024-06-15,6,Saturday,13,Huancayo,Mixta,Energizante,Bebidas,4.62,Descuento,Nublado
+T00836,S013,2024-03-21,3,Thursday,21,Cusco,Residencial,Sandwich,Comidas,11.07,2x1,Soleado
+T00837,S004,2024-06-02,6,Sunday,15,Arequipa,Residencial,Vino,Alcohol,14.79,Ninguno,Nublado
+T00838,S039,2024-08-30,8,Friday,14,Cusco,Residencial,Jabón,Aseo,6.62,Descuento,Soleado
+T00839,S035,2024-08-12,8,Monday,6,Trujillo,Residencial,Vino,Alcohol,7.7,Descuento,Nublado
+T00840,S018,2024-07-08,7,Monday,17,Arequipa,Residencial,Paracetamol,Farmacia,3.02,Ninguno,Nublado
+T00841,S046,2024-11-11,11,Monday,11,Cusco,Mixta,Cerveza,Alcohol,15.4,Descuento,Soleado
+T00842,S009,2024-11-13,11,Wednesday,12,Cusco,Mixta,Hamburguesa,Comidas,14.58,Descuento,Lluvioso
+T00843,S006,2024-07-09,7,Tuesday,20,Trujillo,Comercial,Galletas,Snacks,2.12,Descuento,Nublado
+T00844,S004,2024-03-24,3,Sunday,6,Cusco,Mixta,Gaseosa,Bebidas,4.86,2x1,Soleado
+T00845,S009,2024-06-27,6,Thursday,10,Arequipa,Comercial,Agua,Bebidas,4.01,Descuento,Lluvioso
+T00846,S037,2024-07-11,7,Thursday,18,Piura,Mixta,Chocolate,Snacks,2.53,2x1,Nublado
+T00847,S012,2024-04-16,4,Tuesday,9,Cusco,Comercial,Jugo,Bebidas,2.66,Ninguno,Lluvioso
+T00848,S028,2024-07-28,7,Sunday,19,Trujillo,Residencial,Papas fritas,Snacks,4.82,Ninguno,Lluvioso
+T00849,S015,2024-12-07,12,Saturday,14,Cusco,Mixta,Gaseosa,Bebidas,7.62,Combo,Lluvioso
+T00850,S007,2024-08-21,8,Wednesday,19,Piura,Comercial,Papas fritas,Snacks,3.11,Descuento,Nublado
+T00851,S013,2024-08-27,8,Tuesday,14,Arequipa,Residencial,Energizante,Bebidas,4.62,Ninguno,Lluvioso
+T00852,S027,2024-12-24,12,Tuesday,13,Huancayo,Residencial,Energizante,Bebidas,3.36,Ninguno,Nublado
+T00853,S005,2024-01-14,1,Sunday,21,Trujillo,Residencial,Vino,Alcohol,9.15,Ninguno,Nublado
+T00854,S014,2024-05-26,5,Sunday,12,Huancayo,Comercial,Sandwich,Comidas,14.4,Ninguno,Nublado
+T00855,S033,2024-10-07,10,Monday,9,Cusco,Mixta,Galletas,Snacks,5.44,Ninguno,Nublado
+T00856,S027,2024-03-11,3,Monday,14,Trujillo,Comercial,Cerveza,Alcohol,8.76,2x1,Soleado
+T00857,S016,2024-12-05,12,Thursday,6,Piura,Residencial,Hamburguesa,Comidas,7.61,Descuento,Lluvioso
+T00858,S006,2024-10-12,10,Saturday,19,Arequipa,Residencial,Jabón,Aseo,9.05,Ninguno,Soleado
+T00859,S031,2024-06-02,6,Sunday,7,Arequipa,Residencial,Paracetamol,Farmacia,4.42,Ninguno,Lluvioso
+T00860,S005,2024-03-04,3,Monday,8,Lima,Mixta,Sandwich,Comidas,12.16,2x1,Nublado
+T00861,S010,2024-06-16,6,Sunday,16,Lima,Residencial,Papas fritas,Snacks,4.82,2x1,Nublado
+T00862,S032,2024-06-15,6,Saturday,7,Cusco,Mixta,Vino,Alcohol,10.87,Descuento,Nublado
+T00863,S019,2024-08-10,8,Saturday,18,Trujillo,Comercial,Galletas,Snacks,4.28,Ninguno,Nublado
+T00864,S032,2024-09-26,9,Thursday,20,Arequipa,Residencial,Shampoo,Aseo,4.31,2x1,Nublado
+T00865,S011,2024-05-01,5,Wednesday,22,Arequipa,Residencial,Alcohol medicinal,Farmacia,9.0,Descuento,Lluvioso
+T00866,S018,2024-08-19,8,Monday,10,Trujillo,Mixta,Jabón,Aseo,9.38,Descuento,Lluvioso
+T00867,S018,2024-03-18,3,Monday,21,Piura,Comercial,Chocolate,Snacks,2.52,2x1,Nublado
+T00868,S030,2024-04-02,4,Tuesday,8,Cusco,Comercial,Vino,Alcohol,7.52,2x1,Lluvioso
+T00869,S038,2024-09-02,9,Monday,21,Cusco,Residencial,Agua,Bebidas,2.77,Ninguno,Nublado
+T00870,S018,2024-09-16,9,Monday,10,Lima,Mixta,Jabón,Aseo,10.87,Ninguno,Lluvioso
+T00871,S042,2024-01-10,1,Wednesday,12,Cusco,Comercial,Vino,Alcohol,20.25,Ninguno,Nublado
+T00872,S042,2024-04-06,4,Saturday,11,Arequipa,Mixta,Cerveza,Alcohol,9.65,Ninguno,Lluvioso
+T00873,S031,2024-02-05,2,Monday,18,Piura,Residencial,Paracetamol,Farmacia,9.87,Ninguno,Nublado
+T00874,S030,2024-12-13,12,Friday,16,Arequipa,Residencial,Sandwich,Comidas,8.95,Descuento,Nublado
+T00875,S028,2024-10-14,10,Monday,11,Cusco,Comercial,Paracetamol,Farmacia,8.16,Ninguno,Lluvioso
+T00876,S006,2024-11-29,11,Friday,9,Huancayo,Comercial,Agua,Bebidas,4.4,Descuento,Soleado
+T00877,S019,2024-09-17,9,Tuesday,13,Lima,Mixta,Cerveza,Alcohol,17.17,Descuento,Lluvioso
+T00878,S029,2024-05-06,5,Monday,16,Piura,Mixta,Hamburguesa,Comidas,13.77,2x1,Soleado
+T00879,S019,2024-12-17,12,Tuesday,15,Trujillo,Mixta,Chocolate,Snacks,3.3,Ninguno,Soleado
+T00880,S041,2024-06-20,6,Thursday,6,Arequipa,Residencial,Galletas,Snacks,2.27,Ninguno,Nublado
+T00881,S010,2024-06-10,6,Monday,12,Lima,Residencial,Cerveza,Alcohol,16.25,Ninguno,Lluvioso
+T00882,S002,2024-06-12,6,Wednesday,6,Trujillo,Comercial,Jugo,Bebidas,6.32,Ninguno,Nublado
+T00883,S013,2024-08-06,8,Tuesday,22,Trujillo,Mixta,Galletas,Snacks,3.04,Ninguno,Lluvioso
+T00884,S046,2024-07-25,7,Thursday,19,Lima,Residencial,Alcohol medicinal,Farmacia,3.28,Ninguno,Lluvioso
+T00885,S011,2024-05-22,5,Wednesday,8,Arequipa,Comercial,Shampoo,Aseo,6.55,Ninguno,Nublado
+T00886,S021,2024-11-25,11,Monday,6,Arequipa,Comercial,Energizante,Bebidas,3.03,Combo,Soleado
+T00887,S020,2024-07-22,7,Monday,16,Huancayo,Residencial,Paracetamol,Farmacia,9.58,Ninguno,Nublado
+T00888,S021,2024-09-14,9,Saturday,15,Piura,Comercial,Cerveza,Alcohol,12.59,Ninguno,Nublado
+T00889,S046,2024-09-28,9,Saturday,16,Cusco,Mixta,Chocolate,Snacks,4.78,Descuento,Lluvioso
+T00890,S046,2024-06-20,6,Thursday,8,Piura,Comercial,Alcohol medicinal,Farmacia,5.37,Ninguno,Soleado
+T00891,S008,2024-08-21,8,Wednesday,15,Cusco,Residencial,Hamburguesa,Comidas,14.05,Ninguno,Soleado
+T00892,S011,2024-07-29,7,Monday,20,Huancayo,Comercial,Paracetamol,Farmacia,6.98,2x1,Nublado
+T00893,S012,2024-09-17,9,Tuesday,20,Piura,Residencial,Shampoo,Aseo,4.2,Descuento,Nublado
+T00894,S028,2024-10-02,10,Wednesday,7,Trujillo,Mixta,Jabón,Aseo,4.82,Ninguno,Soleado
+T00895,S011,2024-07-18,7,Thursday,18,Arequipa,Comercial,Jabón,Aseo,4.25,Ninguno,Nublado
+T00896,S038,2024-08-01,8,Thursday,8,Huancayo,Mixta,Paracetamol,Farmacia,5.43,2x1,Lluvioso
+T00897,S049,2024-10-31,10,Thursday,16,Lima,Residencial,Energizante,Bebidas,7.71,Ninguno,Lluvioso
+T00898,S007,2024-10-01,10,Tuesday,17,Arequipa,Mixta,Paracetamol,Farmacia,8.34,2x1,Lluvioso
+T00899,S026,2024-09-03,9,Tuesday,18,Trujillo,Mixta,Empanada,Comidas,7.45,Ninguno,Lluvioso
+T00900,S041,2024-02-27,2,Tuesday,12,Cusco,Comercial,Chocolate,Snacks,2.59,2x1,Lluvioso
+T00901,S046,2024-05-16,5,Thursday,22,Lima,Comercial,Gaseosa,Bebidas,6.35,Ninguno,Nublado
+T00902,S037,2024-05-28,5,Tuesday,13,Trujillo,Comercial,Sandwich,Comidas,11.4,Descuento,Soleado
+T00903,S017,2024-12-26,12,Thursday,14,Piura,Comercial,Empanada,Comidas,13.34,Ninguno,Soleado
+T00904,S012,2024-06-04,6,Tuesday,13,Piura,Mixta,Chocolate,Snacks,3.55,Descuento,Nublado
+T00905,S039,2024-01-30,1,Tuesday,14,Trujillo,Residencial,Paracetamol,Farmacia,8.47,Ninguno,Soleado
+T00906,S026,2024-04-20,4,Saturday,13,Huancayo,Comercial,Galletas,Snacks,2.22,Ninguno,Lluvioso
+T00907,S010,2024-05-15,5,Wednesday,21,Huancayo,Comercial,Papas fritas,Snacks,5.41,Ninguno,Soleado
+T00908,S023,2024-09-30,9,Monday,6,Trujillo,Residencial,Vino,Alcohol,24.82,Combo,Lluvioso
+T00909,S004,2024-05-10,5,Friday,18,Lima,Mixta,Papas fritas,Snacks,1.96,Ninguno,Lluvioso
+T00910,S006,2024-08-17,8,Saturday,19,Lima,Residencial,Agua,Bebidas,5.48,Ninguno,Lluvioso
+T00911,S015,2024-10-11,10,Friday,13,Lima,Residencial,Cerveza,Alcohol,8.48,Ninguno,Soleado
+T00912,S003,2024-11-14,11,Thursday,7,Cusco,Comercial,Shampoo,Aseo,9.64,Ninguno,Lluvioso
+T00913,S028,2024-03-19,3,Tuesday,15,Lima,Residencial,Vino,Alcohol,16.58,2x1,Nublado
+T00914,S045,2024-09-06,9,Friday,22,Trujillo,Mixta,Jabón,Aseo,7.46,2x1,Nublado
+T00915,S029,2024-03-11,3,Monday,11,Trujillo,Residencial,Vino,Alcohol,12.53,Ninguno,Soleado
+T00916,S036,2024-11-04,11,Monday,21,Arequipa,Comercial,Energizante,Bebidas,4.39,Combo,Lluvioso
+T00917,S039,2024-10-29,10,Tuesday,19,Huancayo,Residencial,Papas fritas,Snacks,3.99,2x1,Lluvioso
+T00918,S015,2024-03-11,3,Monday,9,Trujillo,Mixta,Jabón,Aseo,10.05,Ninguno,Lluvioso
+T00919,S026,2024-10-31,10,Thursday,22,Cusco,Comercial,Vino,Alcohol,18.26,Combo,Nublado
+T00920,S045,2024-10-07,10,Monday,9,Piura,Comercial,Cerveza,Alcohol,24.11,Ninguno,Soleado
+T00921,S042,2024-08-31,8,Saturday,19,Lima,Mixta,Shampoo,Aseo,4.37,Ninguno,Lluvioso
+T00922,S014,2024-09-15,9,Sunday,6,Cusco,Mixta,Shampoo,Aseo,5.02,Ninguno,Lluvioso
+T00923,S049,2024-06-04,6,Tuesday,12,Trujillo,Mixta,Chocolate,Snacks,4.92,Ninguno,Nublado
+T00924,S027,2024-03-09,3,Saturday,9,Arequipa,Comercial,Papas fritas,Snacks,2.93,Descuento,Nublado
+T00925,S030,2024-03-13,3,Wednesday,10,Arequipa,Comercial,Hamburguesa,Comidas,12.99,Ninguno,Nublado
+T00926,S018,2024-03-27,3,Wednesday,13,Lima,Mixta,Energizante,Bebidas,2.69,Descuento,Nublado
+T00927,S043,2024-05-15,5,Wednesday,15,Arequipa,Comercial,Gaseosa,Bebidas,5.74,Ninguno,Soleado
+T00928,S017,2024-08-25,8,Sunday,15,Piura,Residencial,Vino,Alcohol,20.48,Descuento,Nublado
+T00929,S014,2024-09-22,9,Sunday,14,Cusco,Mixta,Shampoo,Aseo,11.61,2x1,Soleado
+T00930,S026,2024-07-23,7,Tuesday,14,Arequipa,Residencial,Agua,Bebidas,3.32,Ninguno,Nublado
+T00931,S024,2024-12-16,12,Monday,14,Huancayo,Residencial,Jabón,Aseo,5.39,Ninguno,Nublado
+T00932,S013,2024-10-08,10,Tuesday,14,Trujillo,Mixta,Empanada,Comidas,14.84,Combo,Nublado
+T00933,S037,2024-05-11,5,Saturday,6,Piura,Comercial,Cerveza,Alcohol,18.39,Ninguno,Nublado
+T00934,S021,2024-07-22,7,Monday,8,Cusco,Comercial,Vino,Alcohol,7.97,Combo,Soleado
+T00935,S017,2024-09-30,9,Monday,9,Trujillo,Comercial,Cerveza,Alcohol,11.84,Descuento,Soleado
+T00936,S009,2024-01-21,1,Sunday,20,Piura,Mixta,Energizante,Bebidas,3.29,Ninguno,Soleado
+T00937,S046,2024-12-30,12,Monday,16,Trujillo,Mixta,Empanada,Comidas,5.1,Ninguno,Lluvioso
+T00938,S037,2024-02-03,2,Saturday,21,Arequipa,Mixta,Galletas,Snacks,4.39,Ninguno,Soleado
+T00939,S002,2024-05-31,5,Friday,17,Lima,Comercial,Cerveza,Alcohol,14.54,Descuento,Soleado
+T00940,S039,2024-07-14,7,Sunday,22,Lima,Comercial,Alcohol medicinal,Farmacia,9.76,Descuento,Nublado
+T00941,S021,2024-10-28,10,Monday,17,Cusco,Mixta,Papas fritas,Snacks,3.85,2x1,Soleado
+T00942,S007,2024-09-25,9,Wednesday,10,Piura,Mixta,Paracetamol,Farmacia,3.7,Descuento,Lluvioso
+T00943,S035,2024-07-15,7,Monday,6,Huancayo,Comercial,Jabón,Aseo,4.5,Ninguno,Nublado
+T00944,S013,2024-05-13,5,Monday,13,Trujillo,Comercial,Cerveza,Alcohol,23.3,Descuento,Nublado
+T00945,S017,2024-06-09,6,Sunday,9,Trujillo,Comercial,Shampoo,Aseo,5.24,Descuento,Lluvioso
+T00946,S015,2024-07-27,7,Saturday,14,Cusco,Residencial,Cerveza,Alcohol,16.65,Ninguno,Soleado
+T00947,S039,2024-07-10,7,Wednesday,14,Lima,Residencial,Cerveza,Alcohol,24.52,Ninguno,Lluvioso
+T00948,S048,2024-10-01,10,Tuesday,17,Cusco,Comercial,Shampoo,Aseo,11.91,Ninguno,Soleado
+T00949,S024,2024-11-14,11,Thursday,17,Piura,Comercial,Shampoo,Aseo,6.59,Ninguno,Soleado
+T00950,S033,2024-09-30,9,Monday,8,Lima,Residencial,Shampoo,Aseo,4.73,Ninguno,Soleado
+T00951,S005,2024-05-04,5,Saturday,12,Lima,Mixta,Shampoo,Aseo,10.75,2x1,Soleado
+T00952,S010,2024-05-17,5,Friday,7,Cusco,Mixta,Jabón,Aseo,4.8,Ninguno,Soleado
+T00953,S008,2024-02-18,2,Sunday,22,Piura,Comercial,Energizante,Bebidas,7.16,Descuento,Soleado
+T00954,S013,2024-08-10,8,Saturday,13,Huancayo,Residencial,Shampoo,Aseo,5.24,Combo,Lluvioso
+T00955,S042,2024-04-27,4,Saturday,21,Huancayo,Mixta,Galletas,Snacks,4.4,Ninguno,Nublado
+T00956,S002,2024-08-31,8,Saturday,10,Arequipa,Residencial,Sandwich,Comidas,7.63,Ninguno,Lluvioso
+T00957,S024,2024-10-20,10,Sunday,13,Piura,Mixta,Jabón,Aseo,6.47,Ninguno,Nublado
+T00958,S032,2024-01-15,1,Monday,10,Arequipa,Comercial,Empanada,Comidas,8.58,Descuento,Lluvioso
+T00959,S033,2024-02-12,2,Monday,9,Lima,Mixta,Gaseosa,Bebidas,5.85,Ninguno,Lluvioso
+T00960,S033,2024-10-08,10,Tuesday,11,Huancayo,Comercial,Paracetamol,Farmacia,9.04,Ninguno,Lluvioso
+T00961,S024,2024-12-03,12,Tuesday,18,Huancayo,Mixta,Sandwich,Comidas,12.64,Ninguno,Nublado
+T00962,S019,2024-09-14,9,Saturday,8,Trujillo,Mixta,Agua,Bebidas,5.3,Ninguno,Soleado
+T00963,S001,2024-07-15,7,Monday,16,Piura,Residencial,Vino,Alcohol,14.19,2x1,Soleado
+T00964,S011,2024-12-06,12,Friday,15,Lima,Comercial,Cerveza,Alcohol,21.24,Descuento,Nublado
+T00965,S008,2024-01-06,1,Saturday,6,Arequipa,Mixta,Chocolate,Snacks,4.35,Ninguno,Lluvioso
+T00966,S003,2024-08-12,8,Monday,11,Arequipa,Mixta,Alcohol medicinal,Farmacia,4.46,2x1,Soleado
+T00967,S018,2024-03-09,3,Saturday,22,Lima,Residencial,Paracetamol,Farmacia,3.54,Ninguno,Lluvioso
+T00968,S038,2024-12-07,12,Saturday,15,Huancayo,Comercial,Jugo,Bebidas,4.06,2x1,Nublado
+T00969,S037,2024-12-24,12,Tuesday,21,Lima,Comercial,Sandwich,Comidas,6.06,Ninguno,Nublado
+T00970,S008,2024-02-18,2,Sunday,8,Arequipa,Residencial,Jabón,Aseo,8.71,2x1,Soleado
+T00971,S049,2024-06-13,6,Thursday,10,Trujillo,Comercial,Sandwich,Comidas,5.13,Ninguno,Soleado
+T00972,S015,2024-01-31,1,Wednesday,12,Huancayo,Comercial,Empanada,Comidas,5.05,Combo,Soleado
+T00973,S036,2024-12-10,12,Tuesday,11,Piura,Residencial,Alcohol medicinal,Farmacia,4.61,Descuento,Lluvioso
+T00974,S006,2024-12-10,12,Tuesday,16,Cusco,Comercial,Alcohol medicinal,Farmacia,3.63,2x1,Nublado
+T00975,S044,2024-05-08,5,Wednesday,12,Lima,Mixta,Jugo,Bebidas,4.25,Descuento,Lluvioso
+T00976,S026,2024-08-04,8,Sunday,17,Lima,Residencial,Chocolate,Snacks,1.2,Ninguno,Soleado
+T00977,S044,2024-04-04,4,Thursday,16,Huancayo,Comercial,Jugo,Bebidas,7.67,2x1,Lluvioso
+T00978,S017,2024-09-16,9,Monday,15,Huancayo,Residencial,Alcohol medicinal,Farmacia,9.24,Ninguno,Soleado
+T00979,S008,2024-08-06,8,Tuesday,17,Trujillo,Mixta,Paracetamol,Farmacia,8.04,Ninguno,Nublado
+T00980,S021,2024-10-04,10,Friday,15,Huancayo,Comercial,Alcohol medicinal,Farmacia,9.76,2x1,Lluvioso
+T00981,S001,2024-01-02,1,Tuesday,13,Cusco,Comercial,Empanada,Comidas,6.29,Combo,Soleado
+T00982,S037,2024-03-03,3,Sunday,12,Piura,Mixta,Empanada,Comidas,13.65,Combo,Soleado
+T00983,S008,2024-06-17,6,Monday,17,Lima,Comercial,Sandwich,Comidas,7.12,Ninguno,Soleado
+T00984,S021,2024-08-05,8,Monday,16,Lima,Mixta,Energizante,Bebidas,6.98,Ninguno,Nublado
+T00985,S028,2024-12-01,12,Sunday,8,Huancayo,Residencial,Shampoo,Aseo,5.65,Ninguno,Nublado
+T00986,S034,2024-12-21,12,Saturday,21,Lima,Comercial,Empanada,Comidas,8.6,Ninguno,Nublado
+T00987,S047,2024-02-17,2,Saturday,22,Arequipa,Mixta,Jugo,Bebidas,2.43,Ninguno,Lluvioso
+T00988,S024,2024-07-22,7,Monday,9,Huancayo,Mixta,Vino,Alcohol,16.38,Ninguno,Lluvioso
+T00989,S036,2024-08-08,8,Thursday,11,Lima,Comercial,Shampoo,Aseo,7.39,2x1,Nublado
+T00990,S037,2024-08-27,8,Tuesday,20,Cusco,Comercial,Alcohol medicinal,Farmacia,8.78,Ninguno,Nublado
+T00991,S047,2024-04-28,4,Sunday,7,Cusco,Mixta,Alcohol medicinal,Farmacia,5.02,2x1,Nublado
+T00992,S029,2024-03-31,3,Sunday,10,Arequipa,Mixta,Paracetamol,Farmacia,4.49,Ninguno,Nublado
+T00993,S020,2024-04-04,4,Thursday,14,Arequipa,Comercial,Cerveza,Alcohol,13.37,Ninguno,Lluvioso
+T00994,S025,2024-11-18,11,Monday,7,Arequipa,Comercial,Agua,Bebidas,5.1,Descuento,Lluvioso
+T00995,S038,2024-02-22,2,Thursday,19,Cusco,Mixta,Cerveza,Alcohol,23.8,Descuento,Lluvioso
+T00996,S047,2024-10-27,10,Sunday,15,Arequipa,Comercial,Jabón,Aseo,7.4,Ninguno,Lluvioso
+T00997,S016,2024-11-29,11,Friday,10,Cusco,Mixta,Shampoo,Aseo,9.23,Descuento,Lluvioso
+T00998,S030,2024-06-06,6,Thursday,18,Cusco,Residencial,Jabón,Aseo,11.57,2x1,Soleado
+T00999,S042,2024-10-08,10,Tuesday,10,Trujillo,Residencial,Jabón,Aseo,9.3,Ninguno,Lluvioso
+T01000,S049,2024-01-11,1,Thursday,7,Huancayo,Residencial,Jabón,Aseo,5.04,Combo,Nublado
