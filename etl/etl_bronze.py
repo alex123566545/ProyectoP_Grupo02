@@ -1,6 +1,12 @@
+import sys
+import os
+
+sys.path.append(os.path.abspath("./.secrets"))
+
 import pandas as pd
-import requests
 import datetime
+import requests
+
 from db_config import get_connection
 
 
