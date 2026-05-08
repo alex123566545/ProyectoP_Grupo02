@@ -1,0 +1,68 @@
+name: ETL ML Pipeline
+
+on:
+
+  push:
+    branches:
+      - main
+
+  workflow_dispatch:
+
+  schedule:
+    - cron: '0 6 * * *'
+
+
+jobs:
+
+  etl_pipeline:
+
+    runs-on: ubuntu-latest
+
+    steps:
+
+      # =====================================
+      # CLONAR REPOSITORIO
+      # =====================================
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+
+      # =====================================
+      # CONFIGURAR PYTHON
+      # =====================================
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+
+      # =====================================
+      # INSTALAR DEPENDENCIAS
+      # =====================================
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+
+      # =====================================
+      # EJECUTAR ETL BRONZE
+      # =====================================
+      - name: Run ETL Bronze
+        run: |
+          python etl/etl_bronze.py
+
+
+      # =====================================
+      # EJECUTAR ETL GOLD ML
+      # =====================================
+      - name: Run ETL Gold ML
+        run: |
+          python etl/etl_gold.py
+
+
+      # =====================================
+      # FIN
+      # =====================================
+      - name: Pipeline finished
+        run: echo "🚀 ETL + ML ejecutado correctamente"
