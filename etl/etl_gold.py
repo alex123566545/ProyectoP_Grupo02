@@ -1,5 +1,8 @@
-import os
 import sys
+import os
+
+sys.path.append(os.path.abspath("./.secrets"))
+
 import pandas as pd
 import numpy as np
 import datetime
@@ -8,14 +11,14 @@ import pickle
 from sklearn.ensemble import RandomForestRegressor
 from sklearn.preprocessing import LabelEncoder
 from sklearn.model_selection import train_test_split
-from sklearn.metrics import mean_absolute_error, mean_squared_error, r2_score
+from sklearn.metrics import (
+    mean_absolute_error,
+    mean_squared_error,
+    r2_score
+)
 
 from psycopg2.extras import execute_values
 
-# =============================
-# CONEXIÓN
-# =============================
-sys.path.append(os.path.abspath("../.secrets"))
 from db_config import get_connection
 
 
