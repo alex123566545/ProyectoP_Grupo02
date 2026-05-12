@@ -62,12 +62,22 @@ jobs:
 
 
       # =====================================
-      # INSTALAR POSTGRES CLIENT
+      # INSTALAR POSTGRESQL 17 CLIENT
       # =====================================
-      - name: Install PostgreSQL Client
+      - name: Install PostgreSQL 17 Client
         run: |
+
           sudo apt-get update
-          sudo apt-get install -y postgresql-client
+
+          sudo apt-get install -y wget gnupg2
+
+          echo "deb http://apt.postgresql.org/pub/repos/apt noble-pgdg main" | sudo tee /etc/apt/sources.list.d/pgdg.list
+
+          wget -qO - https://www.postgresql.org/media/keys/ACCC4CF8.asc | sudo apt-key add -
+
+          sudo apt-get update
+
+          sudo apt-get install -y postgresql-client-17
 
 
       # =====================================
@@ -103,4 +113,4 @@ jobs:
       # FIN
       # =====================================
       - name: Pipeline finished
-        run: echo "🚀 ETL + ML ejecutado correctamente"
+        run: echo "🚀 ETL + ML + BACKUP ejecutado correctamente"
