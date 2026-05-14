@@ -7,6 +7,7 @@ import pandas as pd
 import numpy as np
 import datetime
 import pickle
+import gzip
 
 from sklearn.ensemble import RandomForestRegressor
 from sklearn.preprocessing import LabelEncoder
@@ -146,10 +147,12 @@ def train_model(conn, pipeline_name):
     if r2 < 0.5:
         raise Exception("Modelo muy débil")
 
-    # guardar
+    # =============================
+    # GUARDADO COMPRIMIDO 🔥
+    # =============================
     os.makedirs("models", exist_ok=True)
 
-    with open("models/model.pkl", "wb") as f:
+    with gzip.open("models/model.pkl.gz", "wb") as f:
         pickle.dump(model, f)
 
     with open("models/encoders.pkl", "wb") as f:
@@ -167,7 +170,10 @@ def predict_model(conn, pipeline_name):
 
     log_db(conn, pipeline_name, "INICIO PREDICT")
 
-    with open("models/model.pkl", "rb") as f:
+    # =============================
+    # CARGA MODELO COMPRIMIDO 🔥
+    # =============================
+    with gzip.open("models/model.pkl.gz", "rb") as f:
         model = pickle.load(f)
 
     with open("models/encoders.pkl", "rb") as f:
@@ -192,7 +198,6 @@ def predict_model(conn, pipeline_name):
     cursor.execute("TRUNCATE TABLE gold_ml.ventas_predicha")
     conn.commit()
 
-    # 🔥 usamos df_pred ORIGINAL (no modificado)
     records = df_pred[[
         "fecha",
         "mes",
@@ -293,3 +298,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
