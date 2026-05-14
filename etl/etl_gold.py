@@ -7,7 +7,6 @@ import pandas as pd
 import numpy as np
 import datetime
 import pickle
-import gzip
 
 from sklearn.ensemble import RandomForestRegressor
 from sklearn.preprocessing import LabelEncoder
@@ -19,7 +18,6 @@ from sklearn.metrics import (
 )
 
 from psycopg2.extras import execute_values
-
 from db_config import get_connection
 
 
@@ -27,6 +25,7 @@ from db_config import get_connection
 # LOG
 # =============================
 log_file = "etl.log"
+
 
 def escribir_log(msg):
     with open(log_file, "a", encoding="utf-8") as f:
@@ -64,8 +63,8 @@ def feature_engineering(df):
 
     df["temporada"] = pd.cut(
         df["mes"],
-        bins=[0,3,6,9,12],
-        labels=["Q1","Q2","Q3","Q4"]
+        bins=[0, 3, 6, 9, 12],
+        labels=["Q1", "Q2", "Q3", "Q4"]
     ).astype(str)
 
     return df
@@ -119,7 +118,7 @@ def train_model(conn, pipeline_name):
 
     # modelo
     model = RandomForestRegressor(
-        n_estimators=200,
+        n_estimators=300,
         max_depth=15,
         min_samples_split=5,
         min_samples_leaf=2,
@@ -147,12 +146,10 @@ def train_model(conn, pipeline_name):
     if r2 < 0.5:
         raise Exception("Modelo muy débil")
 
-    # =============================
-    # GUARDADO COMPRIMIDO 🔥
-    # =============================
+    # guardar
     os.makedirs("models", exist_ok=True)
 
-    with gzip.open("models/model.pkl.gz", "wb") as f:
+    with open("models/model.pkl", "wb") as f:
         pickle.dump(model, f)
 
     with open("models/encoders.pkl", "wb") as f:
@@ -170,10 +167,7 @@ def predict_model(conn, pipeline_name):
 
     log_db(conn, pipeline_name, "INICIO PREDICT")
 
-    # =============================
-    # CARGA MODELO COMPRIMIDO 🔥
-    # =============================
-    with gzip.open("models/model.pkl.gz", "rb") as f:
+    with open("models/model.pkl", "rb") as f:
         model = pickle.load(f)
 
     with open("models/encoders.pkl", "rb") as f:
@@ -298,4 +292,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-
