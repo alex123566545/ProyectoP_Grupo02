@@ -35,11 +35,14 @@ def escribir_log(msg):
 def log_db(conn, pipeline, msg):
     try:
         cursor = conn.cursor()
+
         cursor.execute("""
             INSERT INTO meta.pipeline_log(pipeline_name, mensaje)
             VALUES (%s,%s)
         """, (pipeline, msg))
+
         conn.commit()
+
     except Exception as e:
         print("Error log_db:", e)
 
@@ -49,16 +52,28 @@ def log_db(conn, pipeline, msg):
 # =============================
 def feature_engineering(df):
 
-    df["hora"] = pd.to_datetime(df["hora"], errors="coerce").dt.hour.fillna(0).astype(int)
+    df["hora"] = pd.to_datetime(
+        df["hora"],
+        errors="coerce"
+    ).dt.hour.fillna(0).astype(int)
 
-    df["es_fin_semana"] = df["dia_semana"].isin(["Saturday", "Sunday"]).astype(int)
+    df["es_fin_semana"] = (
+        df["dia_semana"]
+        .isin(["Saturday", "Sunday"])
+        .astype(int)
+    )
 
     df["hora_pico"] = df["hora"].apply(
-        lambda x: 1 if (12 <= x <= 14 or 18 <= x <= 21) else 0
+        lambda x: 1 if (
+            12 <= x <= 14 or
+            18 <= x <= 21
+        ) else 0
     )
 
     df["producto_promocion"] = (
-        df["producto"].astype(str) + "_" + df["tipo_promocion"].astype(str)
+        df["producto"].astype(str)
+        + "_"
+        + df["tipo_promocion"].astype(str)
     )
 
     df["temporada"] = pd.cut(
@@ -97,26 +112,45 @@ def train_model(conn, pipeline_name):
 
     log_db(conn, pipeline_name, "INICIO TRAIN")
 
-    df = pd.read_sql("SELECT * FROM gold_ml.ventas_dataset", conn)
+    df = pd.read_sql(
+        "SELECT * FROM gold_ml.ventas_dataset",
+        conn
+    )
 
     df_model = feature_engineering(df.copy())
 
     y = df_model["cantidad_vendida"]
+
     X = df_model[FEATURES]
 
-    # encoding
+    # =============================
+    # ENCODING
+    # =============================
     encoders = {}
+
     for col in X.select_dtypes(include="object").columns:
+
         le = LabelEncoder()
-        X[col] = le.fit_transform(X[col].astype(str))
+
+        X[col] = le.fit_transform(
+            X[col].astype(str)
+        )
+
         encoders[col] = le
 
-    # split
+    # =============================
+    # SPLIT
+    # =============================
     X_train, X_test, y_train, y_test = train_test_split(
-        X, y, test_size=0.2, random_state=42
+        X,
+        y,
+        test_size=0.2,
+        random_state=42
     )
 
-    # modelo
+    # =============================
+    # MODELO
+    # =============================
     model = RandomForestRegressor(
         n_estimators=120,
         max_depth=15,
@@ -130,9 +164,15 @@ def train_model(conn, pipeline_name):
 
     preds = model.predict(X_test)
 
-    # métricas
+    # =============================
+    # MÉTRICAS
+    # =============================
     mae = mean_absolute_error(y_test, preds)
-    rmse = np.sqrt(mean_squared_error(y_test, preds))
+
+    rmse = np.sqrt(
+        mean_squared_error(y_test, preds)
+    )
+
     r2 = r2_score(y_test, preds)
 
     print(f"MAE: {mae}")
@@ -146,7 +186,9 @@ def train_model(conn, pipeline_name):
     if r2 < 0.5:
         raise Exception("Modelo muy débil")
 
-    # guardar
+    # =============================
+    # GUARDAR MODELOS
+    # =============================
     os.makedirs("models", exist_ok=True)
 
     with open("models/model.pkl", "wb") as f:
@@ -154,6 +196,10 @@ def train_model(conn, pipeline_name):
 
     with open("models/encoders.pkl", "wb") as f:
         pickle.dump(encoders, f)
+
+    # 🔥 NUEVO
+    with open("models/features.pkl", "wb") as f:
+        pickle.dump(FEATURES, f)
 
     log_db(conn, pipeline_name, "MODELO GUARDADO")
 
@@ -167,29 +213,64 @@ def predict_model(conn, pipeline_name):
 
     log_db(conn, pipeline_name, "INICIO PREDICT")
 
+    # =============================
+    # CARGAR MODELO
+    # =============================
     with open("models/model.pkl", "rb") as f:
         model = pickle.load(f)
 
     with open("models/encoders.pkl", "rb") as f:
         encoders = pickle.load(f)
 
-    df_pred = pd.read_sql("SELECT * FROM gold_ml.ventas_prediccion", conn)
+    with open("models/features.pkl", "rb") as f:
+        features = pickle.load(f)
 
-    df_model = feature_engineering(df_pred.copy())
-    X_new = df_model[FEATURES]
+    # =============================
+    # DATA
+    # =============================
+    df_pred = pd.read_sql(
+        "SELECT * FROM gold_ml.ventas_prediccion",
+        conn
+    )
 
-    # encoding consistente
+    df_model = feature_engineering(
+        df_pred.copy()
+    )
+
+    X_new = df_model[features]
+
+    # =============================
+    # ENCODING CONSISTENTE
+    # =============================
     for col, le in encoders.items():
+
         X_new[col] = X_new[col].astype(str)
+
         X_new[col] = X_new[col].apply(
-            lambda x: le.transform([x])[0] if x in le.classes_ else -1
+            lambda x:
+            le.transform([x])[0]
+            if x in le.classes_
+            else -1
         )
 
-    df_pred["cantidad_predicha"] = model.predict(X_new).round(0).astype(int)
+    # 🔥 MISMO ORDEN EXACTO
+    X_new = X_new[features]
+
+    # =============================
+    # PREDICCIÓN
+    # =============================
+    df_pred["cantidad_predicha"] = (
+        model.predict(X_new)
+        .round(0)
+        .astype(int)
+    )
 
     cursor = conn.cursor()
 
-    cursor.execute("TRUNCATE TABLE gold_ml.ventas_predicha")
+    cursor.execute(
+        "TRUNCATE TABLE gold_ml.ventas_predicha"
+    )
+
     conn.commit()
 
     records = df_pred[[
@@ -209,17 +290,28 @@ def predict_model(conn, pipeline_name):
 
     execute_values(cursor, """
         INSERT INTO gold_ml.ventas_predicha (
-            fecha, mes, dia_semana, hora,
-            ubicacion_tienda, tipo_zona,
-            producto, categoria_producto,
-            precio_unitario, tipo_promocion,
-            clima, cantidad_predicha
+            fecha,
+            mes,
+            dia_semana,
+            hora,
+            ubicacion_tienda,
+            tipo_zona,
+            producto,
+            categoria_producto,
+            precio_unitario,
+            tipo_promocion,
+            clima,
+            cantidad_predicha
         ) VALUES %s
     """, records)
 
     conn.commit()
 
-    log_db(conn, pipeline_name, "PREDICCIONES GUARDADAS")
+    log_db(
+        conn,
+        pipeline_name,
+        "PREDICCIONES GUARDADAS"
+    )
 
 
 # =============================
@@ -229,9 +321,12 @@ def main():
 
     pipeline_name = "etl_gold_ml"
 
-    escribir_log("INICIO PIPELINE GOLD ML")
+    escribir_log(
+        "INICIO PIPELINE GOLD ML"
+    )
 
     conn = get_connection()
+
     cursor = conn.cursor()
 
     run_id = None
@@ -240,32 +335,60 @@ def main():
 
         cursor.execute("""
             INSERT INTO meta.pipeline_run
-            (pipeline_name, fecha_inicio, estado)
+            (
+                pipeline_name,
+                fecha_inicio,
+                estado
+            )
             VALUES (%s, now(), %s)
             RETURNING id
-        """, (pipeline_name, "RUNNING"))
+        """, (
+            pipeline_name,
+            "RUNNING"
+        ))
 
         run_id = cursor.fetchone()[0]
+
         conn.commit()
 
-        log_db(conn, pipeline_name, "PIPELINE START")
+        log_db(
+            conn,
+            pipeline_name,
+            "PIPELINE START"
+        )
 
-        mae, rmse, r2 = train_model(conn, pipeline_name)
-        predict_model(conn, pipeline_name)
+        mae, rmse, r2 = train_model(
+            conn,
+            pipeline_name
+        )
+
+        predict_model(
+            conn,
+            pipeline_name
+        )
 
         cursor.execute("""
             UPDATE meta.pipeline_run
-            SET fecha_fin = now(),
+            SET
+                fecha_fin = now(),
                 estado = %s,
                 filas_procesadas = (
-                    SELECT COUNT(*) FROM gold_ml.ventas_predicha
+                    SELECT COUNT(*)
+                    FROM gold_ml.ventas_predicha
                 )
             WHERE id = %s
-        """, ("OK", run_id))
+        """, (
+            "OK",
+            run_id
+        ))
 
         conn.commit()
 
-        log_db(conn, pipeline_name, f"PIPELINE OK | MAE={mae} RMSE={rmse} R2={r2}")
+        log_db(
+            conn,
+            pipeline_name,
+            f"PIPELINE OK | MAE={mae} RMSE={rmse} R2={r2}"
+        )
 
         print("🚀 PIPELINE ML COMPLETO")
 
@@ -274,19 +397,29 @@ def main():
         conn.rollback()
 
         print("ERROR:", e)
-        log_db(conn, pipeline_name, f"ERROR {e}")
+
+        log_db(
+            conn,
+            pipeline_name,
+            f"ERROR {e}"
+        )
 
         if run_id:
+
             cursor.execute("""
                 UPDATE meta.pipeline_run
-                SET fecha_fin = now(),
+                SET
+                    fecha_fin = now(),
                     estado = 'ERROR'
                 WHERE id = %s
             """, (run_id,))
+
             conn.commit()
 
     finally:
+
         cursor.close()
+
         conn.close()
 
 
