@@ -79,6 +79,34 @@ jobs:
 
           sudo apt-get install -y postgresql-client-17
 
+       # =====================================
+      # CREAR RESPALDO
+      # =====================================
+      - name: Backup Database
+        env:
+          PGPASSWORD: "alex20151615665451"
+        run: |
+
+          mkdir -p backups
+
+          pg_dump \
+            -h aws-1-us-east-2.pooler.supabase.com \
+            -p 5432 \
+            -U postgres.klbmaoqxfvjsczwrrwkj \
+            -d postgres \
+            -F c \
+            -f backups/supabase_backup.dump
+
+
+      # =====================================
+      # SUBIR RESPALDO
+      # =====================================
+      - name: Upload Backup
+        uses: actions/upload-artifact@v4
+        with:
+          name: supabase-backup
+          path: backups/supabase_backup.dump
+
 
      
       # =====================================
