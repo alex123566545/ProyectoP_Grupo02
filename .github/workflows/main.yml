@@ -97,6 +97,14 @@ jobs:
             -F c \
             -f backups/supabase_backup.dump
 
+         # =====================================
+      # SUBIR MODELOS ML
+      # =====================================
+      - name: Upload Models
+        uses: actions/upload-artifact@v4
+        with:
+          name: ml-models
+          path: models/
 
       # =====================================
       # SUBIR RESPALDO
