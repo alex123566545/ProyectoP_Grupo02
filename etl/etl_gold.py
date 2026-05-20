@@ -47,28 +47,15 @@ def log_db(conn, pipeline, msg):
 # =============================
 def feature_engineering(df):
 
-    df["hora"] = pd.to_datetime(
-        df["hora"],
-        errors="coerce"
-    ).dt.hour.fillna(0).astype(int)
+    df["hora"] = pd.to_datetime(df["hora"], errors="coerce").dt.hour.fillna(0).astype(int)
 
     df["es_fin_semana"] = df["dia_semana"].isin(["Saturday", "Sunday"]).astype(int)
 
-    df["hora_pico"] = df["hora"].apply(
-        lambda x: 1 if (12 <= x <= 14 or 18 <= x <= 21) else 0
-    )
+    df["hora_pico"] = df["hora"].apply(lambda x: 1 if (12 <= x <= 14 or 18 <= x <= 21) else 0)
 
-    df["producto_promocion"] = (
-        df["producto"].astype(str)
-        + "_"
-        + df["tipo_promocion"].astype(str)
-    )
+    df["producto_promocion"] = df["producto"].astype(str) + "_" + df["tipo_promocion"].astype(str)
 
-    df["temporada"] = pd.cut(
-        df["mes"],
-        bins=[0, 3, 6, 9, 12],
-        labels=["Q1", "Q2", "Q3", "Q4"]
-    ).astype(str)
+    df["temporada"] = pd.cut(df["mes"], bins=[0, 3, 6, 9, 12], labels=["Q1", "Q2", "Q3", "Q4"]).astype(str)
 
     return df
 
@@ -94,7 +81,7 @@ FEATURES = [
 
 
 # =============================
-# TRAIN MODEL
+# TRAIN
 # =============================
 def train_model(conn, pipeline_name):
 
@@ -113,12 +100,10 @@ def train_model(conn, pipeline_name):
     categorical = X.select_dtypes(include="object").columns
     numeric = X.select_dtypes(exclude="object").columns
 
-    preprocess = ColumnTransformer(
-        transformers=[
-            ("cat", OneHotEncoder(handle_unknown="ignore"), categorical),
-            ("num", "passthrough", numeric)
-        ]
-    )
+    preprocess = ColumnTransformer([
+        ("cat", OneHotEncoder(handle_unknown="ignore"), categorical),
+        ("num", "passthrough", numeric)
+    ])
 
     model = RandomForestRegressor(
         n_estimators=300,
@@ -186,8 +171,8 @@ def predict_model(conn, pipeline_name):
 
     df_pred["cantidad_predicha"] = pipeline.predict(X_new).round(0).astype(int)
 
-    # 🔥 FIX CRÍTICO: evitar problemas de tipo en PostgreSQL
-    df_pred["hora"] = df_pred["hora"].astype(int)
+    # 🔥 FIX REAL (OPCIÓN 1): convertir INT → TIME antes del insert
+    df_pred["hora"] = pd.to_datetime(df_pred["hora"], format="%H", errors="coerce").dt.time
 
     cursor = conn.cursor()
 
