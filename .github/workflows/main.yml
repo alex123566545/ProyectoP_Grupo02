@@ -96,20 +96,15 @@ jobs:
 
 
       # =====================================
-      # 🔥 CREAR CARPETA MODELS (FIX)
-      # =====================================
-      - name: Create models directory
-        run: mkdir -p models
-
-
-      # =====================================
-      # SUBIR MODELOS ML
+      # SUBIR MODELOS ML (SIN ERROR SI NO EXISTEN)
       # =====================================
       - name: Upload Models
         uses: actions/upload-artifact@v4
+        if: always()
         with:
           name: ml-models
-          path: models/
+          path: models/*
+          if-no-files-found: ignore
 
 
       # =====================================
