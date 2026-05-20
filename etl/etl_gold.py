@@ -24,35 +24,45 @@ from psycopg2.extras import execute_values
 from db_config import get_connection
 
 
-# =============================
+# =============================================
 # LOG
-# =============================
+# =============================================
 log_file = "etl.log"
 
 
 def escribir_log(msg):
+
     with open(log_file, "a", encoding="utf-8") as f:
-        f.write(f"{datetime.datetime.now()} - {msg}\n")
+
+        f.write(
+            f"{datetime.datetime.now()} - {msg}\n"
+        )
 
 
 def log_db(conn, pipeline, msg):
+
     try:
+
         cursor = conn.cursor()
 
         cursor.execute("""
-            INSERT INTO meta.pipeline_log(pipeline_name, mensaje)
+            INSERT INTO meta.pipeline_log(
+                pipeline_name,
+                mensaje
+            )
             VALUES (%s,%s)
         """, (pipeline, msg))
 
         conn.commit()
 
     except Exception as e:
+
         print("Error log_db:", e)
 
 
-# =============================
+# =============================================
 # LIMPIEZA TEXTO
-# =============================
+# =============================================
 def clean_text_columns(df):
 
     cols = [
@@ -66,7 +76,9 @@ def clean_text_columns(df):
     ]
 
     for col in cols:
+
         if col in df.columns:
+
             df[col] = (
                 df[col]
                 .astype(str)
@@ -77,27 +89,63 @@ def clean_text_columns(df):
     return df
 
 
-# =============================
-# FEATURE ENGINEERING
-# =============================
+# =============================================
+# FEATURE ENGINEERING AVANZADO
+# =============================================
 def feature_engineering(df):
 
-    # hora -> int
+    # =========================================
+    # FECHA
+    # =========================================
+    df["fecha"] = pd.to_datetime(
+        df["fecha"],
+        errors="coerce"
+    )
+
+    # =========================================
+    # HORA
+    # =========================================
     df["hora"] = (
-        pd.to_datetime(df["hora"], errors="coerce")
+        pd.to_datetime(
+            df["hora"],
+            errors="coerce"
+        )
         .dt.hour
         .fillna(0)
         .astype(int)
     )
 
-    # fin semana
+    # =========================================
+    # DÍA DEL MES
+    # =========================================
+    df["dia_mes"] = (
+        df["fecha"]
+        .dt.day
+    )
+
+    # =========================================
+    # TRIMESTRE
+    # =========================================
+    df["trimestre"] = (
+        df["fecha"]
+        .dt.quarter
+    )
+
+    # =========================================
+    # FIN DE SEMANA
+    # =========================================
     df["es_fin_semana"] = (
         df["dia_semana"]
-        .isin(["saturday", "sunday"])
+        .isin([
+            "saturday",
+            "sunday"
+        ])
         .astype(int)
     )
 
-    # hora pico
+    # =========================================
+    # HORA PICO
+    # =========================================
     df["hora_pico"] = df["hora"].apply(
         lambda x: 1 if (
             12 <= x <= 14 or
@@ -105,62 +153,119 @@ def feature_engineering(df):
         ) else 0
     )
 
-    # día del mes
-    df["dia_mes"] = (
-        pd.to_datetime(df["fecha"])
-        .dt.day
+    # =========================================
+    # TEMPORADA
+    # =========================================
+    df["temporada"] = df["mes"].apply(
+        lambda x:
+            "Q1" if x <= 3 else
+            "Q2" if x <= 6 else
+            "Q3" if x <= 9 else
+            "Q4"
+    )
+
+    # =========================================
+    # INTERACCIÓN PRODUCTO + PROMO
+    # =========================================
+    df["producto_promocion"] = (
+        df["producto"]
+        + "_"
+        + df["tipo_promocion"]
+    )
+
+    # =========================================
+    # INTERACCIÓN TIENDA + CLIMA
+    # =========================================
+    df["zona_clima"] = (
+        df["tipo_zona"]
+        + "_"
+        + df["clima"]
     )
 
     return df
 
 
-# =============================
+# =============================================
 # FEATURES
-# =============================
+# =============================================
 FEATURES = [
+
+    # numéricas
     "mes",
     "dia_mes",
     "hora",
     "precio_unitario",
+    "trimestre",
     "es_fin_semana",
     "hora_pico",
+
+    # categóricas
     "producto",
     "categoria_producto",
     "tipo_promocion",
     "tipo_zona",
     "ubicacion_tienda",
-    "clima"
+    "clima",
+    "dia_semana",
+    "temporada",
+    "producto_promocion",
+    "zona_clima"
 ]
 
 
-# =============================
+# =============================================
 # TRAIN MODEL
-# =============================
+# =============================================
 def train_model(conn, pipeline_name):
 
-    log_db(conn, pipeline_name, "INICIO TRAIN")
+    log_db(
+        conn,
+        pipeline_name,
+        "INICIO TRAIN"
+    )
 
+    # =========================================
+    # LOAD DATA
+    # =========================================
     df = pd.read_sql(
-        "SELECT * FROM gold_ml.ventas_dataset",
+        """
+        SELECT *
+        FROM gold_ml.ventas_dataset
+        """,
         conn
     )
 
     if df.empty:
-        raise Exception("No hay datos para entrenar")
 
-    # limpieza
+        raise Exception(
+            "No hay datos para entrenar"
+        )
+
+    # =========================================
+    # LIMPIEZA
+    # =========================================
     df = clean_text_columns(df)
 
-    # features
-    df = feature_engineering(df.copy())
+    # =========================================
+    # FEATURE ENGINEERING
+    # =========================================
+    df = feature_engineering(
+        df.copy()
+    )
 
+    # =========================================
+    # TARGET
+    # =========================================
     y = df["cantidad_vendida"]
 
+    # =========================================
+    # FEATURES
+    # =========================================
     X = df[FEATURES]
 
-    # =============================
+    # =========================================
     # COLUMNAS
-    # =============================
+    # =========================================
     categorical = X.select_dtypes(
         include=["object", "string"]
     ).columns
@@ -169,18 +274,22 @@ def train_model(conn, pipeline_name):
         exclude=["object", "string"]
     ).columns
 
-    # =============================
+    # =========================================
     # PREPROCESS
-    # =============================
+    # =========================================
     preprocess = ColumnTransformer(
         transformers=[
+
             (
                 "cat",
+
                 OneHotEncoder(
                     handle_unknown="ignore"
                 ),
+
                 categorical
             ),
+
             (
                 "num",
                 "passthrough",
@@ -189,102 +298,206 @@ def train_model(conn, pipeline_name):
         ]
     )
 
-    # =============================
-    # RANDOM FOREST OPTIMIZADO
-    # =============================
+    # =========================================
+    # RANDOM FOREST MEJORADO
+    # =========================================
     model = RandomForestRegressor(
-        n_estimators=500,
-        max_depth=20,
-        min_samples_split=10,
-        min_samples_leaf=4,
+
+        n_estimators=700,
+
+        max_depth=25,
+
+        min_samples_split=5,
+
+        min_samples_leaf=2,
+
         max_features="sqrt",
+
         bootstrap=True,
+
         random_state=42,
+
         n_jobs=-1
     )
 
+    # =========================================
+    # PIPELINE
+    # =========================================
     pipeline = Pipeline([
-        ("preprocess", preprocess),
-        ("model", model)
+
+        (
+            "preprocess",
+            preprocess
+        ),
+
+        (
+            "model",
+            model
+        )
     ])
 
-    # =============================
+    # =========================================
     # SPLIT
-    # =============================
-    X_train, X_test, y_train, y_test = train_test_split(
-        X,
-        y,
-        test_size=0.2,
-        random_state=42,
-        shuffle=True
+    # =========================================
+    X_train, X_test, y_train, y_test = (
+        train_test_split(
+
+            X,
+            y,
+
+            test_size=0.2,
+
+            random_state=42,
+
+            shuffle=True
+        )
     )
 
-    # =============================
+    # =========================================
     # TRAIN
-    # =============================
-    pipeline.fit(X_train, y_train)
+    # =========================================
+    pipeline.fit(
+        X_train,
+        y_train
+    )
 
-    preds = pipeline.predict(X_test)
+    # =========================================
+    # PREDICT TEST
+    # =========================================
+    preds = pipeline.predict(
+        X_test
+    )
 
-    # =============================
+    preds = np.round(preds)
+
+    preds = np.clip(preds, 1, None)
+
+    # =========================================
     # MÉTRICAS
-    # =============================
-    mae = mean_absolute_error(y_test, preds)
+    # =========================================
+    mae = mean_absolute_error(
+        y_test,
+        preds
+    )
 
     rmse = np.sqrt(
-        mean_squared_error(y_test, preds)
+        mean_squared_error(
+            y_test,
+            preds
+        )
     )
 
-    r2 = r2_score(y_test, preds)
+    r2 = r2_score(
+        y_test,
+        preds
+    )
 
-    print(f"MAE: {mae}")
-    print(f"RMSE: {rmse}")
-    print(f"R2: {r2}")
+    # =========================================
+    # PRINT MÉTRICAS
+    # =========================================
+    print("\n========================")
+    print("MÉTRICAS MODELO")
+    print("========================")
 
-    log_db(conn, pipeline_name, f"MAE: {mae}")
-    log_db(conn, pipeline_name, f"RMSE: {rmse}")
-    log_db(conn, pipeline_name, f"R2: {r2}")
+    print(f"MAE  : {mae:.4f}")
+    print(f"RMSE : {rmse:.4f}")
+    print(f"R2   : {r2:.4f}")
 
-    # =============================
+    # =========================================
+    # LOG MÉTRICAS
+    # =========================================
+    log_db(
+        conn,
+        pipeline_name,
+        f"MAE: {mae}"
+    )
+
+    log_db(
+        conn,
+        pipeline_name,
+        f"RMSE: {rmse}"
+    )
+
+    log_db(
+        conn,
+        pipeline_name,
+        f"R2: {r2}"
+    )
+
+    # =========================================
     # FEATURE IMPORTANCE
-    # =============================
+    # =========================================
     try:
 
         feature_names = (
-            pipeline.named_steps["preprocess"]
+            pipeline
+            .named_steps["preprocess"]
             .get_feature_names_out()
         )
 
         importances = (
-            pipeline.named_steps["model"]
+            pipeline
+            .named_steps["model"]
             .feature_importances_
         )
 
         importance_df = pd.DataFrame({
+
             "feature": feature_names,
+
             "importance": importances
+
         }).sort_values(
             by="importance",
             ascending=False
         )
 
-        print("\nTOP FEATURES:")
-        print(importance_df.head(15))
+        print("\n========================")
+        print("TOP VARIABLES")
+        print("========================")
+
+        print(
+            importance_df.head(15)
+        )
 
     except Exception as e:
-        print("Error feature importance:", e)
 
-    # =============================
+        print(
+            "Error feature importance:",
+            e
+        )
+
+    # =========================================
     # GUARDAR MODELO
-    # =============================
-    os.makedirs("models", exist_ok=True)
+    # =========================================
+    os.makedirs(
+        "models",
+        exist_ok=True
+    )
 
-    with open("models/model.pkl", "wb") as f:
-        pickle.dump(pipeline, f)
+    with open(
+        "models/model.pkl",
+        "wb"
+    ) as f:
 
-    with open("models/features.pkl", "wb") as f:
-        pickle.dump(FEATURES, f)
+        pickle.dump(
+            pipeline,
+            f
+        )
 
+    with open(
+        "models/features.pkl",
+        "wb"
+    ) as f:
+
+        pickle.dump(
+            FEATURES,
+            f
+        )
+
+    # =========================================
+    # LOG
+    # =========================================
     log_db(
         conn,
         pipeline_name,
@@ -294,53 +507,94 @@ def train_model(conn, pipeline_name):
     return mae, rmse, r2
 
 
-# =============================
+# =============================================
 # PREDICT
-# =============================
+# =============================================
 def predict_model(conn, pipeline_name):
 
-    log_db(conn, pipeline_name, "INICIO PREDICT")
+    log_db(
+        conn,
+        pipeline_name,
+        "INICIO PREDICT"
+    )
 
-    # =============================
+    # =========================================
     # LOAD MODEL
-    # =============================
-    with open("models/model.pkl", "rb") as f:
+    # =========================================
+    with open(
+        "models/model.pkl",
+        "rb"
+    ) as f:
+
         pipeline = pickle.load(f)
 
-    with open("models/features.pkl", "rb") as f:
+    with open(
+        "models/features.pkl",
+        "rb"
+    ) as f:
+
         features = pickle.load(f)
 
-    # =============================
+    # =========================================
     # DATA
-    # =============================
+    # =========================================
     df_pred = pd.read_sql(
-        "SELECT * FROM gold_ml.ventas_prediccion",
+        """
+        SELECT *
+        FROM gold_ml.ventas_prediccion
+        """,
         conn
     )
 
     if df_pred.empty:
-        raise Exception("No hay datos para predicción")
 
-    # limpieza
-    df_pred = clean_text_columns(df_pred)
+        raise Exception(
+            "No hay datos para predicción"
+        )
 
-    # feature engineering
+    # =========================================
+    # LIMPIEZA
+    # =========================================
+    df_pred = clean_text_columns(
+        df_pred
+    )
+
+    # =========================================
+    # FEATURE ENGINEERING
+    # =========================================
     df_pred = feature_engineering(
         df_pred.copy()
     )
 
+    # =========================================
+    # FEATURES
+    # =========================================
     X_new = df_pred[features]
 
-    # =============================
+    # =========================================
     # PREDICT
-    # =============================
-    df_pred["cantidad_predicha"] = (
-        pipeline.predict(X_new)
-        .round(0)
-        .astype(int)
+    # =========================================
+    predicciones = pipeline.predict(
+        X_new
     )
 
-    # 🔥 convertir hora int -> time
+    predicciones = np.round(
+        predicciones
+    )
+
+    predicciones = np.clip(
+        predicciones,
+        1,
+        None
+    )
+
+    df_pred["cantidad_predicha"] = (
+        predicciones.astype(int)
+    )
+
+    # =========================================
+    # HORA
+    # =========================================
     df_pred["hora"] = (
         pd.to_datetime(
             df_pred["hora"],
@@ -350,18 +604,21 @@ def predict_model(conn, pipeline_name):
         .dt.time
     )
 
-    # =============================
+    # =========================================
     # INSERT DB
-    # =============================
+    # =========================================
     cursor = conn.cursor()
 
-    cursor.execute(
-        "TRUNCATE TABLE gold_ml.ventas_predicha"
-    )
+    cursor.execute("""
+        TRUNCATE TABLE
+        gold_ml.ventas_predicha
+        RESTART IDENTITY
+    """)
 
     conn.commit()
 
     records = df_pred[[
+
         "fecha",
         "mes",
         "dia_semana",
@@ -374,10 +631,13 @@ def predict_model(conn, pipeline_name):
         "tipo_promocion",
         "clima",
         "cantidad_predicha"
+
     ]].values.tolist()
 
     execute_values(cursor, """
+
         INSERT INTO gold_ml.ventas_predicha (
+
             fecha,
             mes,
             dia_semana,
@@ -390,7 +650,11 @@ def predict_model(conn, pipeline_name):
             tipo_promocion,
             clima,
             cantidad_predicha
-        ) VALUES %s
+
+        )
+
+        VALUES %s
+
     """, records)
 
     conn.commit()
@@ -402,9 +666,9 @@ def predict_model(conn, pipeline_name):
     )
 
 
-# =============================
+# =============================================
 # MAIN
-# =============================
+# =============================================
 def main():
 
     pipeline_name = "etl_gold_ml"
@@ -427,7 +691,7 @@ def main():
             pipeline_name
         )
 
-        print("🚀 PIPELINE ML COMPLETO")
+        print("\n🚀 PIPELINE ML COMPLETO")
 
     except Exception as e:
 
@@ -445,4 +709,5 @@ def main():
 
 
 if __name__ == "__main__":
+
     main()
