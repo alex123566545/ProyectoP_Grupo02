@@ -66,9 +66,7 @@ jobs:
       # =====================================
       - name: Install PostgreSQL 17 Client
         run: |
-
           sudo apt-get update
-
           sudo apt-get install -y wget gnupg2
 
           echo "deb http://apt.postgresql.org/pub/repos/apt noble-pgdg main" | sudo tee /etc/apt/sources.list.d/pgdg.list
@@ -76,17 +74,16 @@ jobs:
           wget -qO - https://www.postgresql.org/media/keys/ACCC4CF8.asc | sudo apt-key add -
 
           sudo apt-get update
-
           sudo apt-get install -y postgresql-client-17
 
-       # =====================================
+
+      # =====================================
       # CREAR RESPALDO
       # =====================================
       - name: Backup Database
         env:
           PGPASSWORD: "alex20151615665451"
         run: |
-
           mkdir -p backups
 
           pg_dump \
@@ -97,7 +94,15 @@ jobs:
             -F c \
             -f backups/supabase_backup.dump
 
-         # =====================================
+
+      # =====================================
+      # 🔥 CREAR CARPETA MODELS (FIX)
+      # =====================================
+      - name: Create models directory
+        run: mkdir -p models
+
+
+      # =====================================
       # SUBIR MODELOS ML
       # =====================================
       - name: Upload Models
@@ -105,6 +110,7 @@ jobs:
         with:
           name: ml-models
           path: models/
+
 
       # =====================================
       # SUBIR RESPALDO
@@ -116,7 +122,6 @@ jobs:
           path: backups/supabase_backup.dump
 
 
-     
       # =====================================
       # FIN
       # =====================================
