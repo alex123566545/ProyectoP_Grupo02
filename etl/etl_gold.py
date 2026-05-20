@@ -31,8 +31,16 @@ log_file = "etl.log"
 
 
 def escribir_log(msg):
-    with open(log_file, "a", encoding="utf-8") as f:
-        f.write(f"{datetime.datetime.now()} - {msg}\n")
+
+    with open(
+        log_file,
+        "a",
+        encoding="utf-8"
+    ) as f:
+
+        f.write(
+            f"{datetime.datetime.now()} - {msg}\n"
+        )
 
 
 def log_db(conn, pipeline, msg):
@@ -47,13 +55,19 @@ def log_db(conn, pipeline, msg):
                 mensaje
             )
             VALUES (%s,%s)
-        """, (pipeline, msg))
+        """, (
+            pipeline,
+            msg
+        ))
 
         conn.commit()
 
     except Exception as e:
 
-        print("Error log_db:", e)
+        print(
+            "Error log_db:",
+            e
+        )
 
 
 # =============================
@@ -62,6 +76,7 @@ def log_db(conn, pipeline, msg):
 def clean_text_columns(df):
 
     cols = [
+
         "producto",
         "categoria_producto",
         "tipo_promocion",
@@ -69,6 +84,7 @@ def clean_text_columns(df):
         "ubicacion_tienda",
         "clima",
         "dia_semana"
+
     ]
 
     for col in cols:
@@ -76,9 +92,13 @@ def clean_text_columns(df):
         if col in df.columns:
 
             df[col] = (
+
                 df[col]
+
                 .astype(str)
+
                 .str.strip()
+
                 .str.lower()
             )
 
@@ -99,61 +119,123 @@ def feature_engineering(df):
     )
 
     # ==================================
-    # HORA NORMALIZADA
+    # MES ENTERO
     # ==================================
-    df["hora"] = pd.to_datetime(
-        df["hora"].astype(str),
-        format="%H:%M:%S",
-        errors="coerce"
-    ).dt.hour
+    df["mes"] = (
 
-    df["hora"] = (
-        df["hora"]
-        .fillna(0)
+        pd.to_numeric(
+            df["mes"],
+            errors="coerce"
+        )
+
+        .fillna(1)
+
         .astype(int)
     )
 
     # ==================================
-    # REDONDEAR PRECIO
+    # HORA NORMALIZADA
+    # ==================================
+    df["hora"] = (
+
+        pd.to_datetime(
+            df["hora"].astype(str),
+            errors="coerce"
+        )
+
+        .dt.hour
+
+        .fillna(0)
+
+        .astype(int)
+    )
+
+    # ==================================
+    # PRECIO NORMALIZADO
     # ==================================
     df["precio_unitario"] = (
+
         pd.to_numeric(
             df["precio_unitario"],
             errors="coerce"
         )
+
         .fillna(0)
+
         .round(2)
     )
 
     # ==================================
-    # FEATURES NUEVAS
+    # DIA DEL MES
     # ==================================
-    df["dia_mes"] = df["fecha"].dt.day
+    df["dia_mes"] = (
+        df["fecha"]
+        .dt.day
+    )
 
-    df["trimestre"] = df["fecha"].dt.quarter
+    # ==================================
+    # TRIMESTRE
+    # ==================================
+    df["trimestre"] = (
+        df["fecha"]
+        .dt.quarter
+    )
 
+    # ==================================
+    # FIN DE SEMANA
+    # ==================================
     df["es_fin_semana"] = (
+
         df["dia_semana"]
-        .isin(["saturday", "sunday"])
+
+        .isin([
+            "saturday",
+            "sunday"
+        ])
+
         .astype(int)
     )
 
+    # ==================================
+    # HORA PICO
+    # ==================================
     df["hora_pico"] = df["hora"].apply(
+
         lambda x: 1 if (
+
             12 <= x <= 14 or
             18 <= x <= 21
+
         ) else 0
     )
 
+    # ==================================
+    # TEMPORADA
+    # ==================================
     df["temporada"] = pd.cut(
+
         df["mes"],
+
         bins=[0, 3, 6, 9, 12],
-        labels=["Q1", "Q2", "Q3", "Q4"]
+
+        labels=[
+            "Q1",
+            "Q2",
+            "Q3",
+            "Q4"
+        ]
+
     ).astype(str)
 
+    # ==================================
+    # FEATURE COMBINADA
+    # ==================================
     df["producto_promocion"] = (
+
         df["producto"].astype(str)
+
         + "_"
+
         + df["tipo_promocion"].astype(str)
     )
 
@@ -164,6 +246,7 @@ def feature_engineering(df):
 # FEATURES
 # =============================
 FEATURES = [
+
     "mes",
     "dia_mes",
     "trimestre",
@@ -179,6 +262,7 @@ FEATURES = [
     "clima",
     "temporada",
     "producto_promocion"
+
 ]
 
 
@@ -187,7 +271,11 @@ FEATURES = [
 # =============================
 def train_model(conn, pipeline_name):
 
-    log_db(conn, pipeline_name, "INICIO TRAIN")
+    log_db(
+        conn,
+        pipeline_name,
+        "INICIO TRAIN"
+    )
 
     df = pd.read_sql(
         "SELECT * FROM gold_ml.ventas_dataset",
@@ -195,6 +283,7 @@ def train_model(conn, pipeline_name):
     )
 
     if df.empty:
+
         raise Exception(
             "No hay datos para entrenar"
         )
@@ -207,7 +296,9 @@ def train_model(conn, pipeline_name):
     # ==================================
     # FEATURE ENGINEERING
     # ==================================
-    df = feature_engineering(df.copy())
+    df = feature_engineering(
+        df.copy()
+    )
 
     # ==================================
     # TARGET
@@ -220,30 +311,43 @@ def train_model(conn, pipeline_name):
     # COLUMNAS
     # ==================================
     categorical = X.select_dtypes(
-        include=["object", "string", "category"]
+        include=[
+            "object",
+            "string",
+            "category"
+        ]
     ).columns
 
     numeric = X.select_dtypes(
-        exclude=["object", "string", "category"]
+        exclude=[
+            "object",
+            "string",
+            "category"
+        ]
     ).columns
 
     # ==================================
     # PREPROCESS
     # ==================================
     preprocess = ColumnTransformer(
+
         transformers=[
 
             (
                 "cat",
+
                 OneHotEncoder(
                     handle_unknown="ignore"
                 ),
+
                 categorical
             ),
 
             (
                 "num",
+
                 "passthrough",
+
                 numeric
             )
         ]
@@ -285,6 +389,7 @@ def train_model(conn, pipeline_name):
             "model",
             model
         )
+
     ])
 
     # ==================================
@@ -310,7 +415,9 @@ def train_model(conn, pipeline_name):
         y_train
     )
 
-    preds = pipeline.predict(X_test)
+    preds = pipeline.predict(
+        X_test
+    )
 
     # ==================================
     # MÉTRICAS
@@ -339,28 +446,51 @@ def train_model(conn, pipeline_name):
     print(f"RMSE : {rmse:.4f}")
     print(f"R2   : {r2:.4f}")
 
-    log_db(conn, pipeline_name, f"MAE: {mae}")
-    log_db(conn, pipeline_name, f"RMSE: {rmse}")
-    log_db(conn, pipeline_name, f"R2: {r2}")
+    log_db(
+        conn,
+        pipeline_name,
+        f"MAE: {mae}"
+    )
+
+    log_db(
+        conn,
+        pipeline_name,
+        f"RMSE: {rmse}"
+    )
+
+    log_db(
+        conn,
+        pipeline_name,
+        f"R2: {r2}"
+    )
 
     # ==================================
-    # IMPORTANCIA VARIABLES
+    # FEATURE IMPORTANCE
     # ==================================
     try:
 
         feature_names = (
-            pipeline.named_steps["preprocess"]
+
+            pipeline
+            .named_steps["preprocess"]
+
             .get_feature_names_out()
         )
 
         importances = (
-            pipeline.named_steps["model"]
+
+            pipeline
+            .named_steps["model"]
+
             .feature_importances_
         )
 
         importance_df = pd.DataFrame({
+
             "feature": feature_names,
+
             "importance": importances
+
         })
 
         importance_df = importance_df.sort_values(
@@ -371,6 +501,7 @@ def train_model(conn, pipeline_name):
         print("\n========================")
         print("TOP VARIABLES")
         print("========================")
+
         print(
             importance_df.head(15)
         )
@@ -499,9 +630,13 @@ def predict_model(conn, pipeline_name):
     # CONVERTIR HORA
     # ==================================
     df_pred["hora"] = pd.to_datetime(
+
         df_pred["hora"],
+
         format="%H",
+
         errors="coerce"
+
     ).dt.time
 
     # ==================================
