@@ -95,19 +95,16 @@ def feature_engineering(df: pd.DataFrame) -> pd.DataFrame:
         .astype(int)
     )
 
-    # BUG CORREGIDO #2:
-    # El original hacía pd.to_datetime(df["hora"].astype(str)).dt.hour
-    # Cuando "hora" ya es un entero (ej: 14), to_datetime lo interpreta
-    # como milisegundos desde epoch → año 1970, hora 0.
-    # Ejemplo: pd.to_datetime("14") → 1970-01-01 00:00:00.000000014
-    # Resultado: df["hora"] siempre era 0, inutilizando hora y hora_pico.
-    # SOLUCIÓN: convertir directamente a int, con fallback seguro.
-    df["hora"] = (
-        pd.to_numeric(df["hora"], errors="coerce")
-        .fillna(0)
-        .astype(int)
-        .clip(0, 23)   # garantizar rango válido
-    )
+    # BUG CORREGIDO #2 (revisado):
+    # La columna "hora" viene de la BD como TIME (HH:MM:SS), no como entero.
+    # pd.to_numeric("14:00:00") → NaN → fillna(0) → siempre 0. Bug silencioso.
+    # pd.to_datetime("14") también falla: lo interpreta como nanosegundos epoch.
+    # SOLUCIÓN: parsear explícitamente con format="%H:%M:%S" para extraer la hora.
+    # Si el valor ya fuera entero (0-23), el fallback to_numeric lo captura.
+    hora_str = df["hora"].astype(str).str.strip()
+    hora_time = pd.to_datetime(hora_str, format="%H:%M:%S", errors="coerce").dt.hour
+    hora_int  = pd.to_numeric(hora_str, errors="coerce")
+    df["hora"] = hora_time.fillna(hora_int).fillna(0).astype(int).clip(0, 23)
 
     df["precio_unitario"] = (
         pd.to_numeric(df["precio_unitario"], errors="coerce")
