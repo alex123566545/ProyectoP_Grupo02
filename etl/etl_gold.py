@@ -192,7 +192,7 @@ def train_model(conn, pipeline_name):
     )
 
     model = RandomForestRegressor(
-        n_estimators=200,
+        n_estimators=150,
         max_depth=20,
         min_samples_split=5,
         min_samples_leaf=2,
