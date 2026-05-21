@@ -6,7 +6,7 @@ sys.path.append(os.path.abspath("./.secrets"))
 import pandas as pd
 import numpy as np
 import datetime
-import pickle
+import joblib
 
 from sklearn.ensemble import RandomForestRegressor
 from sklearn.model_selection import train_test_split
@@ -119,7 +119,7 @@ def feature_engineering(df):
     )
 
     # ==================================
-    # MES ENTERO
+    # MES
     # ==================================
     df["mes"] = (
 
@@ -134,7 +134,7 @@ def feature_engineering(df):
     )
 
     # ==================================
-    # HORA NORMALIZADA
+    # HORA
     # ==================================
     df["hora"] = (
 
@@ -151,7 +151,7 @@ def feature_engineering(df):
     )
 
     # ==================================
-    # PRECIO NORMALIZADO
+    # PRECIO
     # ==================================
     df["precio_unitario"] = (
 
@@ -166,7 +166,7 @@ def feature_engineering(df):
     )
 
     # ==================================
-    # DIA DEL MES
+    # DIA MES
     # ==================================
     df["dia_mes"] = (
         df["fecha"]
@@ -182,7 +182,7 @@ def feature_engineering(df):
     )
 
     # ==================================
-    # FIN DE SEMANA
+    # FIN SEMANA
     # ==================================
     df["es_fin_semana"] = (
 
@@ -227,18 +227,6 @@ def feature_engineering(df):
 
     ).astype(str)
 
-    # ==================================
-    # FEATURE COMBINADA
-    # ==================================
-    df["producto_promocion"] = (
-
-        df["producto"].astype(str)
-
-        + "_"
-
-        + df["tipo_promocion"].astype(str)
-    )
-
     return df
 
 
@@ -260,8 +248,7 @@ FEATURES = [
     "tipo_zona",
     "ubicacion_tienda",
     "clima",
-    "temporada",
-    "producto_promocion"
+    "temporada"
 
 ]
 
@@ -337,7 +324,8 @@ def train_model(conn, pipeline_name):
                 "cat",
 
                 OneHotEncoder(
-                    handle_unknown="ignore"
+                    handle_unknown="ignore",
+                    sparse_output=True
                 ),
 
                 categorical
@@ -354,17 +342,17 @@ def train_model(conn, pipeline_name):
     )
 
     # ==================================
-    # MODELO
+    # MODELO LIGERO
     # ==================================
     model = RandomForestRegressor(
 
-        n_estimators=300,
+        n_estimators=120,
 
-        max_depth=25,
+        max_depth=15,
 
-        min_samples_split=5,
+        min_samples_split=8,
 
-        min_samples_leaf=2,
+        min_samples_leaf=4,
 
         max_features="sqrt",
 
@@ -446,24 +434,6 @@ def train_model(conn, pipeline_name):
     print(f"RMSE : {rmse:.4f}")
     print(f"R2   : {r2:.4f}")
 
-    log_db(
-        conn,
-        pipeline_name,
-        f"MAE: {mae}"
-    )
-
-    log_db(
-        conn,
-        pipeline_name,
-        f"RMSE: {rmse}"
-    )
-
-    log_db(
-        conn,
-        pipeline_name,
-        f"R2: {r2}"
-    )
-
     # ==================================
     # FEATURE IMPORTANCE
     # ==================================
@@ -521,25 +491,17 @@ def train_model(conn, pipeline_name):
         exist_ok=True
     )
 
-    with open(
+    joblib.dump(
+        pipeline,
         "models/model.pkl",
-        "wb"
-    ) as f:
+        compress=3
+    )
 
-        pickle.dump(
-            pipeline,
-            f
-        )
-
-    with open(
+    joblib.dump(
+        FEATURES,
         "models/features.pkl",
-        "wb"
-    ) as f:
-
-        pickle.dump(
-            FEATURES,
-            f
-        )
+        compress=3
+    )
 
     log_db(
         conn,
@@ -564,19 +526,13 @@ def predict_model(conn, pipeline_name):
     # ==================================
     # LOAD MODEL
     # ==================================
-    with open(
-        "models/model.pkl",
-        "rb"
-    ) as f:
+    pipeline = joblib.load(
+        "models/model.pkl"
+    )
 
-        pipeline = pickle.load(f)
-
-    with open(
-        "models/features.pkl",
-        "rb"
-    ) as f:
-
-        features = pickle.load(f)
+    features = joblib.load(
+        "models/features.pkl"
+    )
 
     # ==================================
     # DATA
